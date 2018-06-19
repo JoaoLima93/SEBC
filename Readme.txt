@@ -1,0 +1,3 @@
+** Low Cost Embedded System for Dynamic Rate Simulation: Tarifa Branca **
+
+This work aims to present a proposal for a system design compatible with electronic meters approved by INMETRO, which simulates the billing of White Rate customers, to assist them in the decision making of their tariff modality, since the implementation of the new model may cause doubts about its operation. In this way a low-cost electronic module will be proposed, applying the embedded system development methods for building the solution through the open source development platforms NodeMCU, KiCad, Lua Language, MySql and Android Studio.
