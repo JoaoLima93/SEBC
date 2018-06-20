@@ -53,7 +53,6 @@ void setup()
   //Configurando as Saídas
   pinMode(D4, OUTPUT);
   timeClient.begin();
-
 }
 
 void loop()
@@ -73,6 +72,7 @@ void loop()
   {
      digitalWrite(D4, !digitalRead(D4));
   }
+  html = request.indexOf("/ConfWeb");
   client.flush();
   
   // HTML da Pagina 
@@ -86,6 +86,13 @@ void loop()
   // client.println(timeClient.getFormattedTime());    
   client.println("<form action='/TermosUso' method='get'>");
   client.println("<input type='submit' value='Sim' id='frm1_submit'/></form>");
+  // Cadastro da Internet
+  client.println("<form action= '/ConfWeb.php'>Rede:<br>");
+  client.println("Rede:<br><input type='text' name='Rede' value=''><br>");
+  client.println("Senha:<br><input type='text' name='Senha' value=''><br><br>");
+  client.println("<input type='submit' value='Submit'></form>");
+  //Teste Armazenamento de Variavel
+  client.println(html);    
   client.println("</html>");
   
   delay(1); //INTERVALO DE 1 MILISEGUNDO
