@@ -108,15 +108,14 @@ void http()//Sub rotina que verifica novos clientes e se sim, envia o HTML.
       }
 
       html = "";//Reseta a string.
-      html += "HTTP/1.1 Content-Type: text/html\n\n";//Identificaçao do HTML.
-      html += "<!DOCTYPE html><html><head><title>ESP8266 WEB</title>";//Identificaçao e Titulo.
-      html += "<meta name='viewport' content='user-scalable=no'>";//Desabilita o Zoom.
-      html += "<style>h1{font-size:2vw;color:black;}</style></head>";//Cria uma nova fonte de tamanho e cor X.
-      html += "<body bgcolor='ffffff'><center><h1>";//Cor do Background
-
-      //Estas linhas acima sao parte essencial do codigo, só altere se souber o que esta fazendo!
-      
-      html += "<form action='/LED' method='get'>";//Cria um botao GET para o link /LED
+      html += "HTTP/1.1 Content-Type: text/html\n\n";
+      html += "<!DOCTYPE html><html><head><title>ESP8266 WEB</title>";
+      html += "<meta name='viewport' content='user-scalable=no'>";
+      html += "<style>h1{font-size:2vw;color:black;}</style></head>";
+      html += "<body bgcolor='ffffff'><center><h1>";
+      html += "<h1><center>Configurando SECM:</center></h1>";
+      html += "<center><font size='5'>Para de Gastar energie CaRaLhO s2!</center>";
+      html += "<form action='/LED' method='get'>";
       html += "<input type='submit' value='LED' id='frm1_submit'/></form>";
 
       html += "</h1></center></body></html>";//Termino e fechamento de TAG`s do HTML. Nao altere nada sem saber!
