@@ -28,12 +28,10 @@ IPAddress subnet(255,255,255,0);
 
 //Configurando a Porta
 WiFiServer server(80); 
-WiFiClient cliente;
 
 // Configurando Servidor NTP Brasil
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "gps.ntp.br", -3 * 3600, 60000);
-
 
 void setup()
 {
@@ -61,7 +59,7 @@ void setup()
 
 void loop()
 {
-  /*
+  
   timeClient.update();                              // Atualiza o relogio
   WiFiClient client = server.available();           // Verifica se tem cliente conectado
   if (!client) { 
@@ -72,54 +70,27 @@ void loop()
   }
   String request = client.readStringUntil('\r'); 
   Serial.println(request);
+  if (request.indexOf("/TermosUso") > -1)
+  {
+     digitalWrite(D4, !digitalRead(D4));
+  }
   client.flush();
-  // HTML  da Pagina 
+  
+  // HTML da Pagina 
   client.println("HTTP/1.1 200 OK"); 
   client.println("Content-Type: text/html");
   client.println("");
   client.println("<!DOCTYPE HTML>"); 
   client.println("<html>"); 
-  client.println("<h1><center>Consegui!</center></h1>"); 
-  client.println("<center><font size='5'>Para de Gastar energie CaRaLhO s2!</center>");
-  client.println(timeClient.getFormattedTime());    
+  client.println("<h1><center>Configurando SECM:</center></h1>"); 
+  client.println("<center><font size='5'>Você aceita os termos de uso</center>");
+  // client.println(timeClient.getFormattedTime());    
+  client.println("<form action='/TermosUso' method='get'>");
+  client.println("<input type='submit' value='Sim' id='frm1_submit'/></form>");
   client.println("</html>");
-  */
-  http();
- // delay(1); //INTERVALO DE 1 MILISEGUNDO
   
-  
+  delay(1); //INTERVALO DE 1 MILISEGUNDO
+
  // Serial.println(timeClient.getFormattedTime());    // print do relogio da WEB
  // delay(1000);                                      // atraso de um segundo
-}
-
-
-void http()//Sub rotina que verifica novos clientes e se sim, envia o HTML.
-{
-   cliente = server.available();//Diz ao cliente que há um servidor disponivel.
-
-   if (cliente == true)//Se houver clientes conectados, ira enviar o HTML.
-   {
-      String req = cliente.readStringUntil('\r');//Faz a leitura do Cliente.
-      Serial.println(req);//Printa o pedido no Serial monitor.
-
-      if (req.indexOf("/LED") > -1)//Caso o pedido houver led, inverter o seu estado.
-      {
-         digitalWrite(D4, !digitalRead(D4));//Inverte o estado do led.
-      }
-
-      html = "";//Reseta a string.
-      html += "HTTP/1.1 Content-Type: text/html\n\n";
-      html += "<!DOCTYPE html><html><head><title>ESP8266 WEB</title>";
-      html += "<meta name='viewport' content='user-scalable=no'>";
-      html += "<style>h1{font-size:2vw;color:black;}</style></head>";
-      html += "<body bgcolor='ffffff'><center><h1>";
-      html += "<h1><center>Configurando SECM:</center></h1>";
-      html += "<center><font size='5'>Para de Gastar energie CaRaLhO s2!</center>";
-      html += "<form action='/LED' method='get'>";
-      html += "<input type='submit' value='LED' id='frm1_submit'/></form>";
-
-      html += "</h1></center></body></html>";//Termino e fechamento de TAG`s do HTML. Nao altere nada sem saber!
-      cliente.print(html);//Finalmente, enviamos o HTML para o cliente.
-      cliente.stop();//Encerra a conexao.
-   }
 }
