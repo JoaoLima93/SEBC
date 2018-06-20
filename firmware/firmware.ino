@@ -15,7 +15,6 @@ Está biblioteca foram retiradas dos seguintes dominios:
 #include <ESP8266WiFi.h>    
 #include <NTPClient.h>          
 #include <WiFiUdp.h> 
-#include <WiFiServer.h>
 
 const char *ssid     = "Net Virtua 24";                    // Nome do seu roteador WIFI (SSID)
 const char *password = "#anaJOAO2009#";                    // Senha do roteador WIFI
