@@ -83,16 +83,16 @@ void loop()
   client.println("<html>"); 
   client.println("<h1><center>Configurando SECM:</center></h1>"); 
   client.println("<center><font size='5'>Você aceita os termos de uso</center>");
-  // client.println(timeClient.getFormattedTime());    
   client.println("<form action='/TermosUso' method='get'>");
   client.println("<input type='submit' value='Sim' id='frm1_submit'/></form>");
   // Cadastro da Internet
-  client.println("<form action= '/ConfWeb.php'>-- Configuração de Rede --<br>");
-  client.println("Rede:<input type='text' name='Rede' value=''><br>");
-  client.println("Senha:<input type='text' name='Senha' value=''><br><br>");
+  client.println("<form action= '/ConfWeb.php' method='post'> CONFIGURACAO DE REDE <br>");
+  client.println("WiFi <input type='text' name='Rede' value=''><br>");
+  client.println("Senha <input type='text' name='Senha' value=''><br><br>");
   client.println("<input type='submit' value='Submit'></form>");
   //Teste Armazenamento de Variavel
   client.println(html);    
+  client.println(timeClient.getFormattedTime());    
   client.println("</html>");
   
   delay(1); //INTERVALO DE 1 MILISEGUNDO
