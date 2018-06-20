@@ -15,6 +15,7 @@ Está biblioteca foram retiradas dos seguintes dominios:
 #include <ESP8266WiFi.h>    
 #include <NTPClient.h>          
 #include <WiFiUdp.h> 
+#include <WiFiServer.h>
 
 const char *ssid     = "Net Virtua 24";                    // Nome do seu roteador WIFI (SSID)
 const char *password = "#anaJOAO2009#";                    // Senha do roteador WIFI
@@ -27,20 +28,16 @@ IPAddress subnet(255,255,255,0);
 
 //Configurando a Porta
 WiFiServer server(80); 
+WiFiClient cliente;
 
 // Configurando Servidor NTP Brasil
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "gps.ntp.br", -3 * 3600, 60000);
 
-WiFiServer servidor(80);//Cria um objeto "servidor" na porta 80 (http).
-WiFiClient cliente;//Cria um objeto "cliente".
-
-String html;//String que armazena o corpo do site.
-
 
 void setup()
 {
-  Serial.begin(115200);                     // print no Serial Monitor da IDE
+  Serial.begin(115200);                     // print no Serial Monitor da IDE  
   WiFi.begin(ssid, password);               // acessando a rede WIFI
   Serial.print ( "Conectado a rede " );
   WiFi.config(ip, gateway, subnet);
@@ -58,7 +55,6 @@ void setup()
   
   //Configurando as Saídas
   pinMode(D4, OUTPUT);
-
   timeClient.begin();
 
 }
@@ -99,7 +95,7 @@ void loop()
 
 void http()//Sub rotina que verifica novos clientes e se sim, envia o HTML.
 {
-   cliente = servidor.available();//Diz ao cliente que há um servidor disponivel.
+   cliente = server.available();//Diz ao cliente que há um servidor disponivel.
 
    if (cliente == true)//Se houver clientes conectados, ira enviar o HTML.
    {
