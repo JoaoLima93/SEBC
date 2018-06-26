@@ -72,7 +72,7 @@ void loop()
   {
      digitalWrite(D4, !digitalRead(D4));
   }
-  html = request.indexOf("/ConfWeb.rede");
+  html = request.indexOf("/ConfWeb");
   client.flush();
   
   // HTML da Pagina 
@@ -81,12 +81,12 @@ void loop()
   client.println("");
   client.println("<!DOCTYPE HTML>"); 
   client.println("<html>"); 
-  client.println("<h1><center>Configurando SECM:</center></h1>"); 
-  client.println("<center><font size='5'>Você aceita os termos de uso</center>");
+  client.println("<h1>-- Configurando SECM --</h1>"); 
+  client.println("<font size='5'>Voce aceita os termos de uso: <br>");
   client.println("<form action='/TermosUso' method='get'>");
   client.println("<input type='submit' value='Sim' id='frm1_submit'/></form>");
   // Cadastro da Internet
-  client.println("<form action= '/ConfWeb.php' method='post'> CONFIGURACAO DE REDE <br>");
+  client.println("<form action= '/ConfWeb' method='post'> CONFIGURACAO DE REDE <br>");
   client.println("WiFi <input type='text' name='Rede' value=''><br>");
   client.println("Senha <input type='text' name='Senha' value=''><br><br>");
   client.println("<input type='submit' value='Submit'></form>");
