@@ -1,0 +1,5 @@
+---------- Lista cde Componente ----------
+~ NodeMCU
+
+- Sensor de Corrente
+~ Conector Jack P2 Audio 3.5mm
