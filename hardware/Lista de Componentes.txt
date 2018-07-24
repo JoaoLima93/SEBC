@@ -1,5 +1,7 @@
 ---------- Lista cde Componente ----------
-~ NodeMCU
+- NodeMCU
 
-- Sensor de Corrente
-~ Conector Jack P2 Audio 3.5mm
+~* Sensor de Corrente *~
+- 2 Resistor 10K 1/4W
+- Capacitor 100µF 16V
+- Conector Jack P2 Audio 3.5mm-
