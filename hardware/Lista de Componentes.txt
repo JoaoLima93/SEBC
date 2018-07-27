@@ -11,3 +11,7 @@
 
 ~* Sensor de Tensão
 - Conector Borne
+
+~* Modulo Micro Sd
+Modulo Leitor Cartão Micro Sd Card 
+https://produto.mercadolivre.com.br/MLB-708923667-modulo-leitor-carto-micro-sd-card-leituraescrita-arduino-_JM
