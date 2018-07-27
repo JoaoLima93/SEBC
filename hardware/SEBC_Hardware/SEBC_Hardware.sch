@@ -677,4 +677,334 @@ F 3 "" H 8150 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8150 2400 8800 2400
+$Comp
+L Isolator:4N25 U?
+U 1 1 5B5C1882
+P 6000 5200
+F 0 "U?" H 6000 5525 50  0000 C CNN
+F 1 "4N25" H 6000 5434 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 5800 5000 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83725/4n25.pdf" H 6000 5200 50  0001 L CNN
+	1    6000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B5C4A18
+P 6600 5550
+F 0 "R?" H 6670 5596 50  0000 L CNN
+F 1 "R" H 6670 5505 50  0000 L CNN
+F 2 "" V 6530 5550 50  0001 C CNN
+F 3 "~" H 6600 5550 50  0001 C CNN
+	1    6600 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B5C4A95
+P 7000 5550
+F 0 "C?" H 7115 5596 50  0000 L CNN
+F 1 "C" H 7115 5505 50  0000 L CNN
+F 2 "" H 7038 5400 50  0001 C CNN
+F 3 "~" H 7000 5550 50  0001 C CNN
+	1    7000 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5400 6600 5300
+Wire Wire Line
+	6600 5300 6300 5300
+Wire Wire Line
+	7000 5400 7000 5300
+Wire Wire Line
+	7000 5300 6600 5300
+Connection ~ 6600 5300
+Wire Wire Line
+	6600 5700 6600 5800
+Wire Wire Line
+	6600 5800 6800 5800
+Wire Wire Line
+	7000 5800 7000 5700
+$Comp
+L power:GND #PWR?
+U 1 1 5B5CB767
+P 6800 6000
+F 0 "#PWR?" H 6800 5750 50  0001 C CNN
+F 1 "GND" H 6805 5827 50  0000 C CNN
+F 2 "" H 6800 6000 50  0001 C CNN
+F 3 "" H 6800 6000 50  0001 C CNN
+	1    6800 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 5800 6800 6000
+Connection ~ 6800 5800
+Wire Wire Line
+	6800 5800 7000 5800
+$Comp
+L power:+5V #PWR?
+U 1 1 5B5D0687
+P 6600 4950
+F 0 "#PWR?" H 6600 4800 50  0001 C CNN
+F 1 "+5V" H 6615 5123 50  0000 C CNN
+F 2 "" H 6600 4950 50  0001 C CNN
+F 3 "" H 6600 4950 50  0001 C CNN
+	1    6600 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 5200 6600 5200
+Wire Wire Line
+	6600 4950 6600 5200
+Wire Wire Line
+	7000 5300 7300 5300
+Connection ~ 7000 5300
+Text Label 7300 5300 2    50   ~ 0
+SENSOR_T_A
+$Comp
+L Device:R R?
+U 1 1 5B5DB594
+P 5300 5100
+F 0 "R?" V 5093 5100 50  0000 C CNN
+F 1 "R" V 5184 5100 50  0000 C CNN
+F 2 "" V 5230 5100 50  0001 C CNN
+F 3 "~" H 5300 5100 50  0001 C CNN
+	1    5300 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 5100 5450 5100
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5B5E4257
+P 4800 5300
+F 0 "J?" H 4720 4975 50  0000 C CNN
+F 1 "Conn_01x02" H 4720 5066 50  0000 C CNN
+F 2 "" H 4800 5300 50  0001 C CNN
+F 3 "~" H 4800 5300 50  0001 C CNN
+	1    4800 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 5300 5000 5300
+Wire Wire Line
+	5000 5200 5150 5200
+Wire Wire Line
+	5150 5200 5150 5100
+$Comp
+L Isolator:4N25 U?
+U 1 1 5B5F2663
+P 9200 5200
+F 0 "U?" H 9200 5525 50  0000 C CNN
+F 1 "4N25" H 9200 5434 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 9000 5000 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83725/4n25.pdf" H 9200 5200 50  0001 L CNN
+	1    9200 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B5F266A
+P 9800 5550
+F 0 "R?" H 9870 5596 50  0000 L CNN
+F 1 "R" H 9870 5505 50  0000 L CNN
+F 2 "" V 9730 5550 50  0001 C CNN
+F 3 "~" H 9800 5550 50  0001 C CNN
+	1    9800 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B5F2671
+P 10200 5550
+F 0 "C?" H 10315 5596 50  0000 L CNN
+F 1 "C" H 10315 5505 50  0000 L CNN
+F 2 "" H 10238 5400 50  0001 C CNN
+F 3 "~" H 10200 5550 50  0001 C CNN
+	1    10200 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 5400 9800 5300
+Wire Wire Line
+	9800 5300 9500 5300
+Wire Wire Line
+	10200 5400 10200 5300
+Wire Wire Line
+	10200 5300 9800 5300
+Connection ~ 9800 5300
+Wire Wire Line
+	9800 5700 9800 5800
+Wire Wire Line
+	9800 5800 10000 5800
+Wire Wire Line
+	10200 5800 10200 5700
+$Comp
+L power:GND #PWR?
+U 1 1 5B5F2680
+P 10000 6000
+F 0 "#PWR?" H 10000 5750 50  0001 C CNN
+F 1 "GND" H 10005 5827 50  0000 C CNN
+F 2 "" H 10000 6000 50  0001 C CNN
+F 3 "" H 10000 6000 50  0001 C CNN
+	1    10000 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 5800 10000 6000
+Connection ~ 10000 5800
+Wire Wire Line
+	10000 5800 10200 5800
+$Comp
+L power:+5V #PWR?
+U 1 1 5B5F2689
+P 9800 4950
+F 0 "#PWR?" H 9800 4800 50  0001 C CNN
+F 1 "+5V" H 9815 5123 50  0000 C CNN
+F 2 "" H 9800 4950 50  0001 C CNN
+F 3 "" H 9800 4950 50  0001 C CNN
+	1    9800 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5200 9800 5200
+Wire Wire Line
+	9800 4950 9800 5200
+Wire Wire Line
+	10200 5300 10500 5300
+Connection ~ 10200 5300
+Text Label 10500 5300 2    50   ~ 0
+SENSOR_T_B
+$Comp
+L Device:R R?
+U 1 1 5B5F2694
+P 8500 5100
+F 0 "R?" V 8293 5100 50  0000 C CNN
+F 1 "R" V 8384 5100 50  0000 C CNN
+F 2 "" V 8430 5100 50  0001 C CNN
+F 3 "~" H 8500 5100 50  0001 C CNN
+	1    8500 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 5100 8650 5100
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5B5F269C
+P 8000 5300
+F 0 "J?" H 7920 4975 50  0000 C CNN
+F 1 "Conn_01x02" H 7920 5066 50  0000 C CNN
+F 2 "" H 8000 5300 50  0001 C CNN
+F 3 "~" H 8000 5300 50  0001 C CNN
+	1    8000 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8900 5300 8200 5300
+Wire Wire Line
+	8200 5200 8350 5200
+Wire Wire Line
+	8350 5200 8350 5100
+$Comp
+L 4xxx:4051 U?
+U 1 1 5B5FE487
+P 3100 5400
+F 0 "U?" H 3641 5446 50  0000 L CNN
+F 1 "4051" H 3641 5355 50  0000 L CNN
+F 2 "" H 3100 5400 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf" H 3100 5400 50  0001 C CNN
+	1    3100 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 5700 2300 5700
+Text Label 2300 5700 0    50   ~ 0
+INN_E
+Wire Wire Line
+	2600 5800 2300 5800
+Text Label 2300 5800 0    50   ~ 0
+A0
+Wire Wire Line
+	2600 5900 2300 5900
+Wire Wire Line
+	2600 6000 2300 6000
+Text Label 2300 5900 0    50   ~ 0
+A1
+Text Label 2300 6000 0    50   ~ 0
+A2
+Wire Wire Line
+	3400 3200 3750 3200
+Text Label 3750 3200 0    50   ~ 0
+A0
+Wire Wire Line
+	3400 3300 3750 3300
+Wire Wire Line
+	3400 3400 3750 3400
+Wire Wire Line
+	3400 3100 3750 3100
+Text Label 3750 3100 0    50   ~ 0
+INN_E
+Text Label 3750 3300 0    50   ~ 0
+A1
+Text Label 3750 3400 0    50   ~ 0
+A2
+$Comp
+L power:GND #PWR?
+U 1 1 5B6439AD
+P 3150 6500
+F 0 "#PWR?" H 3150 6250 50  0001 C CNN
+F 1 "GND" H 3155 6327 50  0000 C CNN
+F 2 "" H 3150 6500 50  0001 C CNN
+F 3 "" H 3150 6500 50  0001 C CNN
+	1    3150 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 6300 3100 6400
+Wire Wire Line
+	3100 6400 3150 6400
+Wire Wire Line
+	3200 6400 3200 6300
+Wire Wire Line
+	3150 6500 3150 6400
+Connection ~ 3150 6400
+Wire Wire Line
+	3150 6400 3200 6400
+$Comp
+L power:+5V #PWR?
+U 1 1 5B6521C9
+P 3100 4400
+F 0 "#PWR?" H 3100 4250 50  0001 C CNN
+F 1 "+5V" H 3115 4573 50  0000 C CNN
+F 2 "" H 3100 4400 50  0001 C CNN
+F 3 "" H 3100 4400 50  0001 C CNN
+	1    3100 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4500 3100 4400
+Wire Wire Line
+	3600 4800 3750 4800
+Text Label 3750 4800 0    50   ~ 0
+S_MUX
+Wire Wire Line
+	1500 2400 1800 2400
+Text Label 1500 2400 0    50   ~ 0
+S_MUX
+Wire Wire Line
+	2300 4800 2600 4800
+Wire Wire Line
+	2300 4900 2600 4900
+Wire Wire Line
+	2300 5000 2600 5000
+Wire Wire Line
+	2300 5100 2600 5100
+Text Label 2300 4800 2    50   ~ 0
+SENSOR_T_A
+Text Label 2300 4900 2    50   ~ 0
+SENSOR_C_A
+Text Label 2300 5000 2    50   ~ 0
+SENSOR_T_B
+Text Label 2300 5100 2    50   ~ 0
+SENSOR_C_B
 $EndSCHEMATC
