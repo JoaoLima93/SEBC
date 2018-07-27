@@ -1,17 +1,25 @@
----------- Lista cde Componente ----------
+---------------------------- Lista de Componente -------------------------------
 - NodeMCU
+--> Alimentação
+1 Barrel Jack
+1 Fonte de Saída de 5v
+1 Zener
+1 L7805
+2 capacitores eletrolitico de 10 uF
 
+--> Sensor de Corrente
+- 4 Resistor 10K 1/4W
+- 2 Capacitor 100µF 16V
+- 2 Conector Jack P2 Audio 3.5mm-
+
+-->Sensor de Tensão
+- 2 Conector Borne
+- 2 4n25 octoacoplador
+- 2 resistor 220k
+- 2 Resistor 10k
+- 2 capacitor de 100 uF
+
+--> Outras coisas
 ~* Multiplexador Analogico HEF4051B
-
-~* Sensor de Corrente *~
-- 2 Resistor 10K 1/4W
-- Capacitor 100µF 16V
-- Conector Jack P2 Audio 3.5mm-
-
-
-~* Sensor de Tensão
-- Conector Borne
-
 ~* Modulo Micro Sd
-Modulo Leitor Cartão Micro Sd Card 
 https://produto.mercadolivre.com.br/MLB-708923667-modulo-leitor-carto-micro-sd-card-leituraescrita-arduino-_JM
