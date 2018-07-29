@@ -32,20 +32,23 @@ X C 9 -500 -600 200 R 50 50 1 0 I
 ENDDRAW
 ENDDEF
 #
-# Connector:AudioJack2_Ground
+# Connector:AudioJack2_Ground_Switch
 #
-DEF Connector:AudioJack2_Ground J 0 40 Y Y 1 F N
+DEF Connector:AudioJack2_Ground_Switch J 0 40 Y Y 1 F N
 F0 "J" 0 350 50 H V C CNN
-F1 "Connector:AudioJack2_Ground" 0 250 50 H V C CNN
+F1 "Connector:AudioJack2_Ground_Switch" 0 250 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 S -175 -100 -205 0 0 1 0 F
 S 100 -125 -180 175 0 1 10 f
+P 2 0 1 0 70 -10 80 -30 N
 P 4 0 1 10 0 0 25 -25 50 0 100 0 N
+P 4 0 1 0 100 -100 70 -100 70 -10 60 -30 N
 P 5 0 1 10 100 100 -100 100 -100 0 -125 -25 -150 0 N
 X ~ S 200 100 100 L 50 50 1 1 P
 X ~ T 200 0 100 L 50 50 1 1 P
+X ~ TN 200 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -71,6 +74,23 @@ P 6 0 1 10 -150 -100 -100 -100 -50 -50 0 -100 100 -100 200 -100 N
 X ~ 1 300 100 100 L 50 50 1 1 P
 X ~ 2 300 -100 100 L 50 50 1 1 P
 X ~ 3 300 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector:Conn_01x01_Female
+#
+DEF Connector:Conn_01x01_Female J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector:Conn_01x01_Female" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*
+$ENDFPLIST
+DRAW
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+P 2 1 1 6 -50 0 -20 0 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -104,25 +124,6 @@ X VSS 6 -900 -200 150 R 50 50 1 1 W
 X DAT0 7 -900 -300 150 R 50 50 1 1 I
 X DAT1 8 -900 -400 150 R 50 50 1 1 I
 X SHIELD 9 800 -600 150 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Connector_Generic:Conn_01x02
-#
-DEF Connector_Generic:Conn_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic:Conn_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
