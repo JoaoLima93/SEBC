@@ -934,9 +934,9 @@ Wire Wire Line
 	1800 2700 1500 2700
 Wire Wire Line
 	1800 2800 1500 2800
-Text Label 1500 2700 0    50   ~ 0
-SD3
 Text Label 1500 2800 0    50   ~ 0
+SD3
+Text Label 1500 2700 0    50   ~ 0
 SD4
 NoConn ~ 3400 3500
 NoConn ~ 3400 3600
