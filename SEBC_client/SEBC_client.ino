@@ -104,7 +104,7 @@ void loop() {
   digitalWrite(Led_Conexao, HIGH);
   
   // URL de chamda da API
-  String url = "/sebc/salvar.php?";
+  String url = "/sebc/incluiConsumo.php?";
          url += "leitura_a=";
          url += leitura_a;
          url += "leitura_b=";
