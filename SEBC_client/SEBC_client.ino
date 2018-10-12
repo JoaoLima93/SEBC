@@ -9,26 +9,35 @@ Está biblioteca foram utilizada pelos seguintes github:
 <ESP8266WiFi.h> https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi
 <NTPClient.h>   https://github.com/arduino-libraries/NTPClient
 <WiFiUdp.h>     https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi  
--------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------- 
 */
 
 #include <ESP8266WiFi.h>
 #include <NTPClient.h>
-#include <WiFiUdp.h>           
+#include <WiFiUdp.h> 
+#include "EmonLib.h"         
 
+EnergyMonitor Monitor_Corrente;
 const char* ssid     = "Net Lima";           // Nome do seu WIFI (SSID)
 const char* password = "#anaJOAO2009#";      // Senha do WIFI
 
 const int Led_Conexao   =  16;               // Led para verificar conexão WiFi
 const int Led_Energia   =   5;               // Led para verificar fornecimento de energia
 
+const int Sensores      =  0;               // Porta de Entrada dos Sensores
 const int Mux0          =  12;               // Porta de MUX 0
 const int Mux1          =  13;               // Porta de MUX 1
 const int Mux2          =  14;               // Porta de MUX 2
 
 const char* host        = "192.168.10.106";
 int   id_cliente        = 1;
-float leitura_a         = 10;
+
+float Irms_a            = 0;
+float V_a               = 0;
+float leitura_a         = 0;
+float Irms_b            = 0;
+float V_b               = 0;
+float leitura_b         = 0;
 float hora_consumo      = 0;
 
 // Configurando Servidor NTP Brasil
@@ -36,7 +45,8 @@ WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "gps.ntp.br", -3 * 3600, 60000);
 
 void setup() {
-  // Configuração de Sensores 
+  // Configuração de Sensores
+  Monitor_Corrente.current(Sensores,64);
   pinMode(Mux0, OUTPUT);
   pinMode(Mux1, OUTPUT);
   pinMode(Mux2, OUTPUT);
@@ -66,27 +76,33 @@ void setup() {
 
 void loop() {
   // ====================================
+
   timeClient.update();                              // Atualiza o relogio
+  
   digitalWrite(Mux0, LOW);
   digitalWrite(Mux1, LOW);  
   
   //   Sensor de Tensão A
-  digitalWrite(Mux2, LOW);  
+  digitalWrite(Mux2, LOW);
+  V_a = analogRead(Sensores);
     
   //   Sensor de Corrente A
   digitalWrite(Mux2, HIGH);
+  Irms_a = Monitor_Corrente.calcIrms(1480);
 
-  leitura_a += 10;
-  
+  leitura_a = (V_a*Irms_a);
+
   digitalWrite(Mux1, HIGH);  
   
   //   Sensor de Tensão B
-  digitalWrite(Mux2, LOW);  
-    
+  digitalWrite(Mux2, LOW); 
+  V_a = analogRead(Sensores);
+
   //   Sensor de Corrente B
   digitalWrite(Mux2, HIGH);
+  Irms_b = Monitor_Corrente.calcIrms(1480);
 
-  leitura_b += 10;
+  leitura_b = (V_b*Irms_b);
 
   // ======================================
   
