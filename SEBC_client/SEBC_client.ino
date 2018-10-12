@@ -1,17 +1,46 @@
+/* 
+-------------------------------------------------------------------------------------
+Sistema Embarcado de Baixo Custo para Simulação de Tarifas Dinâmicas: Tarifa Branca
+-------------------------------------------------------------------------------------
+Desenvolvimento:
+João Pedro de Lima                               lima.joaopedro@live.com
+-------------------------------------------------------------------------------------
+Está biblioteca foram utilizada pelos seguintes github:
+<ESP8266WiFi.h> https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi
+<NTPClient.h>   https://github.com/arduino-libraries/NTPClient
+<WiFiUdp.h>     https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi  
+-------------------------------------------------------------------------------------
+*/
 
 #include <ESP8266WiFi.h>
+#include <NTPClient.h>
+#include <WiFiUdp.h>           
 
-const char* ssid     = "deLima 24";
-const char* password = "#anaJOAO2009#";
+const char* ssid     = "Net Lima";        // Nome do seu WIFI (SSID)
+const char* password = "#anaJOAO2009#";   // Senha do WIFI
+
+const int configButtton =   2;            // the number of the pushbutton pin
+
+const int Mux0          =  12;            // Porta de MUX 0
+const int Mux1          =  13;            // Porta de MUX 1
+const int Mux2          =  14;            // Porta de MUX 2
 
 const char* host = "192.168.10.106";
 int   id_cliente = 1;
 float leitura    = 10;
 float hora_consumo = 0;
 
-
+// Configurando Servidor NTP Brasil
+WiFiUDP ntpUDP;
+NTPClient timeClient(ntpUDP, "gps.ntp.br", -3 * 3600, 60000);
 
 void setup() {
+  // Configuração de Sensores 
+  pinMode(Mux0, OUTPUT);
+  pinMode(Mux1, OUTPUT);
+  pinMode(Mux2, OUTPUT);
+  
+  // Configuração da Conexão WEB   
   Serial.begin(115200);
   delay(10);
 
@@ -19,7 +48,7 @@ void setup() {
   Serial.println();
   Serial.print("Connecting to ");
   Serial.println(ssid);
-  
+ 
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
   
@@ -36,10 +65,19 @@ void setup() {
 
 void loop() {
   // ====================================
-  //   Leitura dos sensores
+  timeClient.update();                              // Atualiza o relogio
+  digitalWrite(D0, LOW);
+  digitalWrite(D1, LOW);  
   
+  //   Sensor de Tensão A
+  digitalWrite(D2, LOW);  
+    
   leitura += 10;
-  
+
+  //   Sensor de Corrente A
+  digitalWrite(D2, HIGH);  
+
+
   // ======================================
   
   Serial.print("connecting to ");
@@ -60,7 +98,7 @@ void loop() {
          url += "&id_cliente=";
          url += id_cliente;
          url += "&hora_consumo=";
-         url += hora_consumo;         
+         url += timeClient.getFormattedTime();         
   
   Serial.print("Requesting URL: ");
   Serial.println(url);
@@ -85,6 +123,5 @@ void loop() {
   Serial.println();
   Serial.println("closing connection");
  
-  delay(5000);
+  delay(1);
 }
-
