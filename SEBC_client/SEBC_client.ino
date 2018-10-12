@@ -16,19 +16,20 @@ Está biblioteca foram utilizada pelos seguintes github:
 #include <NTPClient.h>
 #include <WiFiUdp.h>           
 
-const char* ssid     = "Net Lima";        // Nome do seu WIFI (SSID)
-const char* password = "#anaJOAO2009#";   // Senha do WIFI
+const char* ssid     = "Net Lima";           // Nome do seu WIFI (SSID)
+const char* password = "#anaJOAO2009#";      // Senha do WIFI
 
-const int configButtton =   2;            // the number of the pushbutton pin
+const int Led_Conexao   =  16;               // Led para verificar conexão WiFi
+const int Led_Energia   =   5;               // Led para verificar fornecimento de energia
 
-const int Mux0          =  12;            // Porta de MUX 0
-const int Mux1          =  13;            // Porta de MUX 1
-const int Mux2          =  14;            // Porta de MUX 2
+const int Mux0          =  12;               // Porta de MUX 0
+const int Mux1          =  13;               // Porta de MUX 1
+const int Mux2          =  14;               // Porta de MUX 2
 
-const char* host = "192.168.10.106";
-int   id_cliente = 1;
-float leitura    = 10;
-float hora_consumo = 0;
+const char* host        = "192.168.10.106";
+int   id_cliente        = 1;
+float leitura_a         = 10;
+float hora_consumo      = 0;
 
 // Configurando Servidor NTP Brasil
 WiFiUDP ntpUDP;
@@ -66,17 +67,26 @@ void setup() {
 void loop() {
   // ====================================
   timeClient.update();                              // Atualiza o relogio
-  digitalWrite(D0, LOW);
-  digitalWrite(D1, LOW);  
+  digitalWrite(Mux0, LOW);
+  digitalWrite(Mux1, LOW);  
   
   //   Sensor de Tensão A
-  digitalWrite(D2, LOW);  
+  digitalWrite(Mux2, LOW);  
     
-  leitura += 10;
-
   //   Sensor de Corrente A
-  digitalWrite(D2, HIGH);  
+  digitalWrite(Mux2, HIGH);
 
+  leitura_a += 10;
+  
+  digitalWrite(Mux1, HIGH);  
+  
+  //   Sensor de Tensão B
+  digitalWrite(Mux2, LOW);  
+    
+  //   Sensor de Corrente B
+  digitalWrite(Mux2, HIGH);
+
+  leitura_b += 10;
 
   // ======================================
   
@@ -88,13 +98,17 @@ void loop() {
   const int httpPort = 80;
   if (!client.connect(host, httpPort)) {
     Serial.println("connection failed");
+    digitalWrite(Led_Conexao, LOW);     
     return;
   }
+  digitalWrite(Led_Conexao, HIGH);
   
-  // We now create a URI for the request
+  // URL de chamda da API
   String url = "/sebc/salvar.php?";
-         url += "leitura=";
-         url += leitura;
+         url += "leitura_a=";
+         url += leitura_a;
+         url += "leitura_b=";
+         url += leitura_b;
          url += "&id_cliente=";
          url += id_cliente;
          url += "&hora_consumo=";
@@ -114,7 +128,7 @@ void loop() {
     }
   }
   
-  // Read all the lines of the reply from server and print them to Serial
+  // Resposta na serial para debug do serviço
   while(client.available()){
     String line = client.readStringUntil('\r');
     Serial.print(line);
