@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SEBC Application</string>
+    <string name="TxtTitulo">Simulador de Tarifas</string>
+    <string name="editUsuario">Usuário:</string>
+    <string name="editSenha">Senha:</string>
+    <string name="btnAcessar">Acessar</string>
+</resources>
