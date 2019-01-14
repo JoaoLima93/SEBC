@@ -1,0 +1,244 @@
+{
+	"id": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+	"name": "Testes API SEBC",
+	"description": "",
+	"order": [
+		"467b897e-48ba-fb4a-8548-17b7cbee808d",
+		"60b8ed25-8de2-df84-4421-272cdc903a93",
+		"029b6dba-03e1-229c-6f47-185606ead7f3",
+		"db157b84-0797-ddda-f49b-1336efeabd6b"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1547503436638,
+	"owner": "5890659",
+	"public": false,
+	"requests": [
+		{
+			"id": "029b6dba-03e1-229c-6f47-185606ead7f3",
+			"headers": "",
+			"headerData": [],
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/inserirTarifa.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id_tarifa",
+					"value": "99",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nome_tarifa",
+					"value": "teste",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tarifa_dinamica",
+					"value": "T",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "periodo_consumo",
+					"value": "teste",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "preco_kwh",
+					"value": "50",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "inicio_periodo",
+					"value": "00:20:00",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fim_periodo",
+					"value": "20:05:00",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "aceita_bandeira",
+					"value": "T",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1547508554445,
+			"name": "inserirTarifas",
+			"description": "Testa a inclusão de novos usuários.",
+			"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+			"responses": []
+		},
+		{
+			"id": "467b897e-48ba-fb4a-8548-17b7cbee808d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/validaUsuario.php",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+			"data": [
+				{
+					"key": "login",
+					"value": "pedro.lima",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "senha",
+					"value": "pedro.lima",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "validaUsuario",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1547506706764,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "60b8ed25-8de2-df84-4421-272cdc903a93",
+			"headers": "",
+			"headerData": [],
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/inserirUsuario.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "nome",
+					"value": "tadeu",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "num_medidor",
+					"value": "220593",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tipo_rede",
+					"value": "2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "termos_uso",
+					"value": "T",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "login",
+					"value": "tadeu",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "senha",
+					"value": "adsfsdf",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "perfil",
+					"value": "a",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1547506791156,
+			"name": "inserirUsuario",
+			"description": "Testa a inclusão de novos usuários.",
+			"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+			"responses": []
+		},
+		{
+			"id": "db157b84-0797-ddda-f49b-1336efeabd6b",
+			"headers": "",
+			"headerData": [],
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/listaTarifaAtual.php",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "login",
+					"value": "pedro.lima",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "senha",
+					"value": "pedro.lima",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1547508599385,
+			"name": "listaTarifaAtual",
+			"description": "",
+			"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+			"responses": []
+		}
+	]
+}
