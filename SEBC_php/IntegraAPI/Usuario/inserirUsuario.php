@@ -4,7 +4,7 @@ header('Content-Type: text/html; charset=utf-8');
 $response = array();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){ 
-    include 'dbConnection.php';
+    include 'C:\xampp\htdocs\sebc\IntegraAPI\ConexaoAPI.php';
 
     $conn = new mysqli($HostName, $HostUser,$HostPass, $DatabaseName);
          

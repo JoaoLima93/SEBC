@@ -18,8 +18,6 @@ Est� biblioteca foram utilizada pelos seguintes github:
 #include "EmonLib.h"         
 
 EnergyMonitor Monitor_Corrente;
-const char* ssid     = "Net Lima";           // Nome do seu WIFI (SSID)
-const char* password = "#anaJOAO2009#";      // Senha do WIFI
 
 const int Led_Conexao   =  16;               // Led para verificar conex�o WiFi
 const int Led_Energia   =   5;               // Led para verificar fornecimento de energia
@@ -29,10 +27,10 @@ const int Mux0          =  12;               // Porta de MUX 0
 const int Mux1          =  13;               // Porta de MUX 1
 const int Mux2          =  14;               // Porta de MUX 2
 
-const char* host        = "192.168.0.47";
+const char* host        = "192.168.1.198";
 int   id_cliente        = 1;
 
-float Irms_a            = 0;
+double Irms_a           = 0;
 float V_a               = 0;
 float leitura_a         = 0;
 float Irms_b            = 0;
@@ -42,8 +40,8 @@ float hora_consumo      = 0;
 
 // Configurando Servidor NTP Brasil
 WiFiUDP ntpUDP;
+//NTPClient timeClient(ntpUDP, "a.st1.ntp.br", -3 * 3600, 60000);
 NTPClient timeClient(ntpUDP, "a.st1.ntp.br", -3 * 3600, 60000);
-// NTPClient timeClient(ntpUDP, "gps.ntp.br", -3 * 3600, 60000);
 
 void setup() {
   // Configuracao de Sensores
@@ -80,36 +78,31 @@ void loop() {
 
   digitalWrite(Led_Energia, HIGH);
   
-  timeClient.update();                              // Atualiza o relogio
- V_a = analogRead(Sensores);
- leitura_a = (V_a);
+ timeClient.update();                                  // Atualiza o relogio
+ digitalWrite(Mux0, LOW);
+ digitalWrite(Mux1, LOW);  
   
- /* 
-  digitalWrite(Mux0, LOW);
-  digitalWrite(Mux1, LOW);  
+ //   Sensor de Tensao A
+ digitalWrite(Mux2, LOW);
   
-  //   Sensor de Tens�o A
-  digitalWrite(Mux2, LOW);
-  V_a = analogRead(Sensores);
-    
-  //   Sensor de Corrente A
-  digitalWrite(Mux2, HIGH);
-  Irms_a = Monitor_Corrente.calcIrms(1480);
+ V_a = analogRead(Sensores)*1000/16764;
+ V_a =104.9;
 
-  leitura_a = (V_a*Irms_a);
+ digitalWrite(Mux2, HIGH);
+ Irms_a = Monitor_Corrente.calcIrms(1776);
+ Irms_a = Irms_a-35/10;
 
-  digitalWrite(Mux1, HIGH);  
-  
-  //   Sensor de Tens�o B
-  digitalWrite(Mux2, LOW); 
-  V_a = analogRead(Sensores);
+ leitura_a = (V_a*Irms_a/1000);
 
-  //   Sensor de Corrente B
-  digitalWrite(Mux2, HIGH);
-  Irms_b = Monitor_Corrente.calcIrms(1480);
-
-  leitura_b = (V_b*Irms_b);
-*/
+ Serial.print("Tensão: ");
+ Serial.println(V_a);
+ 
+ Serial.print("Corrente: ");
+ Serial.println(Irms_a);
+ 
+ Serial.print("Potencia: ");
+ Serial.println(leitura_a);
+ 
   // ======================================
   
   Serial.print("connecting to ");
@@ -159,6 +152,6 @@ void loop() {
   
   Serial.println();
   Serial.println("closing connection");
- 
+
   delay(1);
 }
