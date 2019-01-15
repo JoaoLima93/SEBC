@@ -18,41 +18,42 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET'){
         die("Ops, falhou....: " . $conn->connect_error);
     }
 
-    $id_tarifa     = "'".$_GET['id_tarifa']."'";
-    $tarifa_dinamica  = "'".$_GET['tarifa_dinamica']."'";
-    $date          = date('H:i:s');
-
-    if ($tarifa_dinamica == 'T'){
-        $sql = "SELECT * FROM tarifas WHERE id_tarifa = $id_tarifa 
-                                        and inicio_periodo < $date and fim_periodo > $date";
-    }else{
-        $sql = "SELECT * FROM tarifas WHERE id_tarifa = $id_tarifa"; 
-    }
+    $id_tarifa         = "'".$_GET['id_tarifa']."'";
+    $tarifa_dinamica   = "'".$_GET['tarifa_dinamica']."'";
+    $date              = date('H:i:s');
+ 
+    $sql = "SELECT * FROM tarifas WHERE id_tarifa = $id_tarifa 
+                                        and inicio_periodo < time(now())
+                                        and fim_periodo > time(now())";
 
     $result = $conn->query($sql);
+    $rows = array();
 
-    if ($result->num_rows > 0) {
-
-        $dados_usuario = mysqli_fetch_array($result);
-
-        $response["id_tarifa"]        = $dados_usuario['id_tarifa'];
-        $response["nome_tarifa"]      = $dados_usuario['nome_tarifa'];
-        $response["tarifa_dinamica"]  = $dados_usuario['tarifa_dinamica'];
-        $response["periodo_consumo"]  = $dados_usuario['periodo_consumo'];
-        $response["preco_kwh"]        = $dados_usuario['preco_kwh'];
-        $response["inicio_periodo"]   = $dados_usuario['inicio_periodo'];
-        $response["fim_periodo"]      = $dados_usuario['fim_periodo'];
-        $response["aceita_Bandeira"]  = $dados_usuario['aceita_Bandeira'];
-        $response["data"]             = $date;
-
-    } else {
-
-        $response["autorizado"]  = false;
-        $response["mensagem"]    = "Nenhuma periodo de consumo encontrado para essa tarifa no horario atual";
-        $response["data"]        = $date;
+    if ($result->num_rows > 0) {   
+        while($row = mysqli_fetch_assoc($result)) {    
+                  $id_tarifa = $row['id_tarifa'];
+                  $nome_tarifa = $row['nome_tarifa'];
+                  $tarifa_dinamica = $row['tarifa_dinamica'];
+                  $periodo_consumo = $row['periodo_consumo'];
+                  $preco_kwh = $row['preco_kwh'];
+                  $inicio_periodo = $row['inicio_periodo'];
+                  $fim_periodo = $row['fim_periodo'];
+                  $aceita_Bandeira = $row['aceita_Bandeira'];
+              
+              $rows['tarifas'][] = array('id_tarifa'        => $id_tarifa,
+                                         'nome_tarifa'      => $nome_tarifa, 
+                                         'tarifa_dinamica'  => $tarifa_dinamica,
+                                         'periodo_consumo'  => $periodo_consumo,
+                                         'preco_kwh'        => $preco_kwh,
+                                         'inicio_periodo'   => $inicio_periodo, 
+                                         'fim_periodo'      => $fim_periodo,
+                                         'aceita_Bandeira'  => $aceita_Bandeira
+                                         );
+              $rows['data']      = $date;
+        }
     }
-    
-    echo json_encode($response);
+
+    echo json_encode($rows);    
 
     $conn->close();
 }
