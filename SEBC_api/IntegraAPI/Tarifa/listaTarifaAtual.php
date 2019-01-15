@@ -19,12 +19,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET'){
     }
 
     $id_tarifa         = "'".$_GET['id_tarifa']."'";
-    $tarifa_dinamica   = "'".$_GET['tarifa_dinamica']."'";
+    $tarifa_dinamica   = $_GET['tarifa_dinamica'];
     $date              = date('H:i:s');
  
-    $sql = "SELECT * FROM tarifas WHERE id_tarifa = $id_tarifa 
-                                        and inicio_periodo < time(now())
-                                        and fim_periodo > time(now())";
+    if($tarifa_dinamica == "T"){
+        $sql = "SELECT * FROM tarifas WHERE id_tarifa = $id_tarifa 
+                                            and inicio_periodo < time(now())
+                                            and fim_periodo > time(now())";
+    }else{
+        $sql = "SELECT * FROM tarifas WHERE id_tarifa = $id_tarifa";
+    }
 
     $result = $conn->query($sql);
     $rows = array();
