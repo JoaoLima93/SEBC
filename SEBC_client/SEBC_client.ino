@@ -1,6 +1,6 @@
 /* 
 -------------------------------------------------------------------------------------
-Sistema Embarcado de Baixo Custo para Simula��o de Tarifas Din�micas: Tarifa Branca
+Sistema Embarcado de Baixo Custo para Simulação de Tarifas Din�micas: Tarifa Branca
 -------------------------------------------------------------------------------------
 Desenvolvimento:
 Jo�o Pedro de Lima                               lima.joaopedro@live.com
@@ -18,6 +18,8 @@ Est� biblioteca foram utilizada pelos seguintes github:
 #include "EmonLib.h"         
 
 EnergyMonitor Monitor_Corrente;
+const char* ssid     = "ENERQ_S01";          // Nome do seu WIFI (SSID)
+const char* password = "lab*03541807";       // Senha do WIFI
 
 const int Led_Conexao   =  16;               // Led para verificar conex�o WiFi
 const int Led_Energia   =   5;               // Led para verificar fornecimento de energia
@@ -86,7 +88,7 @@ void loop() {
  digitalWrite(Mux2, LOW);
   
  V_a = analogRead(Sensores)*1000/16764;
- V_a =104.9;
+ V_a =210.9;
 
  digitalWrite(Mux2, HIGH);
  Irms_a = Monitor_Corrente.calcIrms(1776);
@@ -120,7 +122,7 @@ void loop() {
   digitalWrite(Led_Conexao, HIGH);
   
   // URL de chamda da API
-  String url = "/sebc/incluiConsumo.php?";
+  String url = "/sebc/IntegraSE/incluiConsumo.php?";
          url += "leitura_a=";
          url += leitura_a;
          url += "&leitura_b=";

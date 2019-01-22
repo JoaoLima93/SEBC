@@ -4,13 +4,6 @@
     <string name="editUsuario">Usuário:</string>
     <string name="editSenha">Senha:</string>
     <string name="btnAcessar">Acessar</string>
-    <string name="title_activity_painel_admin">PainelAdminActivity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
     <string name="btnNovoCliente">Novo Cliente</string>
     <string name="editLogin">Login</string>
     <string name="editNome">Nome</string>
@@ -26,4 +19,5 @@
         <item>Trifásico (Delta)</item>
         <item>Trifásico (Estrela)</item>
     </string-array>
+    <string name="title_activity_painel_controle_consumo">Painel de Controle SEBC</string>
 </resources>

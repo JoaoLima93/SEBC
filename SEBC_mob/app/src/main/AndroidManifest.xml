@@ -20,11 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".NovoClienteActivity" />
         <activity
-            android:name=".PainelUserActivity"
-            android:label="@string/title_activity_painel_admin"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".NovoClienteActivity"></activity>
+            android:name=".PainelControleActivity"
+            android:label="@string/title_activity_painel_controle_consumo"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

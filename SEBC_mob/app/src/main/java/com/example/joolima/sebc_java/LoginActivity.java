@@ -23,7 +23,7 @@ import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
 
-    String urlWebServices = "http://192.168.0.47/sevtb/getLogin.php";
+    String urlWebServices = "http://192.168.0.102/sebc/IntegraAPI/Usuario/validaUsuario.php";
     StringRequest stringRequest;
     RequestQueue requestQueue;
 
@@ -90,7 +90,8 @@ public class LoginActivity extends AppCompatActivity {
 
                             if(isAutorizado){
 
-                                Intent novaTela = new Intent(LoginActivity.this,PainelUserActivity.class);
+                                Intent novaTela = new Intent(LoginActivity.this,PainelControleActivity.class);
+                                novaTela.putExtra("dados", jsonObject.toString());
                                 startActivity(novaTela);
                                 finish();
 

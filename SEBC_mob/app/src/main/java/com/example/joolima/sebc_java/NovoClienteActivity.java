@@ -25,7 +25,7 @@ import java.util.Map;
 
 public class NovoClienteActivity extends AppCompatActivity {
 
-    String urlWebServices = "http://192.168.0.47/sevtb/createLogin.php";
+    String urlWebServices = "http://192.168.0.102/sebc/IntegraAPI/Usuario/inserirUsuario.php";
     StringRequest stringRequest;
     RequestQueue requestQueue;
 
