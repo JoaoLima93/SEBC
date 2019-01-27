@@ -3,23 +3,26 @@
 Sistema Embarcado de Baixo Custo para Simulação de Tarifas Din�micas: Tarifa Branca
 -------------------------------------------------------------------------------------
 Desenvolvimento:
-Jo�o Pedro de Lima                               lima.joaopedro@live.com
+Joao Pedro de Lima                               lima.joaopedro@live.com
 -------------------------------------------------------------------------------------
-Est� biblioteca foram utilizada pelos seguintes github:
+As bibliotecas biblioteca foram utilizada pelos seguintes github:
 <ESP8266WiFi.h> https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi
 <NTPClient.h>   https://github.com/arduino-libraries/NTPClient
 <WiFiUdp.h>     https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi  
 ------------------------------------------------------------------------------------- 
 */
-
 #include <ESP8266WiFi.h>
 #include <NTPClient.h>
 #include <WiFiUdp.h> 
+#include <SPI.h>
+#include <SD.h>
 #include "EmonLib.h"         
 
 EnergyMonitor Monitor_Corrente;
-const char* ssid     = "ENERQ_S01";          // Nome do seu WIFI (SSID)
-const char* password = "lab*03541807";       // Senha do WIFI
+File leituraSD;
+File leituraNaoIntegradaSD;
+const char* ssid     = "Net Lima";           // Nome do seu WIFI (SSID)
+const char* password = "#anaJOAO2009#";      // Senha do WIFI
 
 const int Led_Conexao   =  16;               // Led para verificar conex�o WiFi
 const int Led_Energia   =   5;               // Led para verificar fornecimento de energia
@@ -28,9 +31,13 @@ const int Sensores      =  0;                // Porta de Entrada dos Sensores
 const int Mux0          =  12;               // Porta de MUX 0
 const int Mux1          =  13;               // Porta de MUX 1
 const int Mux2          =  14;               // Porta de MUX 2
+const int bootloader    =  4;                // Botão de Bootloader
 
-const char* host        = "192.168.1.198";
-int   id_cliente        = 1;
+const char* host        = "192.168.0.15";
+
+String num_medidor     = "22051993";        // Numero do equipamento prédefinido
+String inString = "";
+int    id_cliente;
 
 double Irms_a            = 0;
 double V_a               = 0;
@@ -38,6 +45,7 @@ double leitura_a         = 0;
 double Irms_b            = 0;
 double V_b               = 0;
 double leitura_b         = 0;
+double Irms_c            = 0;
 double V_c               = 0;
 double leitura_c         = 0;
 
@@ -77,13 +85,19 @@ void setup() {
   // Configuracao NTP   
   timeClient.begin();
 
+  // Configurando Botão de Loader
+  pinMode(bootloader, INPUT);
+
+  // Configurando Cliente
+  id_cliente =0;
+  
 }
 
 void loop() {
-  
+
    digitalWrite(Led_Energia, HIGH);
     
-   timeClient.update();                                  // Atualiza o relogio
+   timeClient.update();                                 
    digitalWrite(Mux0, LOW);
    digitalWrite(Mux1, LOW);  
     
@@ -93,8 +107,7 @@ void loop() {
    
    digitalWrite(Mux2, HIGH);
    Irms_a = Monitor_Corrente.calcIrms(1480);
-   Irms_a = Irms_a;
-  
+     
    leitura_a = (V_a*Irms_a/1000);
  
    delay(100);
@@ -106,7 +119,6 @@ void loop() {
    
    digitalWrite(Mux2, HIGH);
    Irms_b = Monitor_Corrente.calcIrms(1480);
-   Irms_b = Irms_b;
   
    leitura_b = (V_b*Irms_b/1000);
  
@@ -120,14 +132,11 @@ void loop() {
    
    digitalWrite(Mux2, HIGH);
    Irms_c = Monitor_Corrente.calcIrms(1480);
-   Irms_c = Irms_c;
   
    leitura_c = (V_c*Irms_c/1000);
    
    delay(100);
 
-// ======================================
- 
   // Valida conexao com a Internet
   WiFiClient client;
   const int httpPort = 80;
@@ -136,6 +145,43 @@ void loop() {
     return;
   }
   digitalWrite(Led_Conexao, HIGH);
+
+  //Botão de bootloader
+     byte carregaCliente = digitalRead(bootloader); 
+   if((inString == "")) {
+        Serial.print("Atualizando Cliente ..... ");
+        String url1 = "/sebc/IntegraSE/vinculaCliente.php?";
+               url1 += "num_medidor=";
+               url1 += num_medidor;
+        client.print(String("GET ") + url1 + " HTTP/1.1\r\n" +
+                     "Host: " + host + "\r\n" + 
+                     "Connection: close\r\n\r\n");
+        unsigned long timeout2 = millis();
+        while (client.available() == 0) {
+          if (millis() - timeout2 > 5000) {
+            Serial.println(">>> Client Timeout !");
+            client.stop();
+            return;
+          }
+        } 
+        delay(1000);
+        char status[32] = {0};
+        client.readBytesUntil('\r', status, sizeof(status));
+      if (strcmp(status, "HTTP/1.1 200 OK") != 0) {
+        return;
+      } 
+      // Skip HTTP headers
+      char endOfHeaders[] = "\r\n\r\n";
+      if (!client.find(endOfHeaders)) {
+        return;
+      }
+      while (client.available()) {
+        char c = client.read();
+        inString += c;
+      }
+      Serial.println(inString);
+   } 
+  id_cliente = inString.toInt();
   
   // URL de chamda da API
   String url = "/sebc/IntegraSE/incluiConsumo.php?";
@@ -160,9 +206,14 @@ void loop() {
       return;
     }
   }
+  
   Serial.print("Requesting URL: ");
   Serial.println(url);
   Serial.println();
+  Serial.print("inString: ");
+  Serial.println(inString);
+  Serial.print("Id_cliente: ");
+  Serial.println(id_cliente);
   Serial.print("Tensão A: ");
   Serial.println(V_a);
   Serial.print("Corrente A: ");
@@ -171,15 +222,17 @@ void loop() {
   Serial.println(leitura_a);
   Serial.print("Tensão B: ");
   Serial.println(V_b);
-  Serial.print("Corrente C: ");
+  Serial.print("Corrente B: ");
   Serial.println(Irms_b);
-  Serial.print("Potencia C: ");
+  Serial.print("Potencia B: ");
   Serial.println(leitura_b);
-  
-  while(client.available()){
-    String line = client.readStringUntil('\r');
-    Serial.print(line);
-  }
+  Serial.println("Leitura OK");
+  Serial.print("Tensão C: ");
+  Serial.println(V_c);
+  Serial.print("Corrente C: ");
+  Serial.println(Irms_c);
+  Serial.print("Potencia C: ");
+  Serial.println(leitura_c);
   Serial.println("Leitura OK");
   delay(1000);
 }
