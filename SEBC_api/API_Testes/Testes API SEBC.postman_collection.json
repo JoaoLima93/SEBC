@@ -381,6 +381,33 @@
 							"response": []
 						},
 						{
+							"name": "deletarTarifas",
+							"request": {
+								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/deletarTarifa.php",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nome_tarifa",
+											"value": "teste_altera",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "id_tarifa",
+											"value": "",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": "Testa a inclusão de novos usuários."
+							},
+							"response": []
+						},
+						{
 							"name": "alterarTarifas",
 							"request": {
 								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/alterarTarifa.php",
@@ -637,6 +664,33 @@
 							"response": []
 						},
 						{
+							"name": "validaUsuario",
+							"request": {
+								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/validaUsuario.php",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "login",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "senha",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
 							"name": "listaUsuario",
 							"request": {
 								"url": {
@@ -674,33 +728,6 @@
 									"variable": []
 								},
 								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "login",
-											"value": "pedro.lima",
-											"description": "",
-											"type": "text"
-										},
-										{
-											"key": "senha",
-											"value": "pedro.lima",
-											"description": "",
-											"type": "text"
-										}
-									]
-								},
-								"description": ""
-							},
-							"response": []
-						},
-						{
-							"name": "validaUsuario",
-							"request": {
-								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/validaUsuario.php",
-								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "formdata",
