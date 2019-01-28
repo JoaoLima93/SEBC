@@ -14,35 +14,47 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
         die("Ops, falhou....: " . $conn->connect_error);
     }
-
+    
     $nome         = "'".$_POST['nome']."'";
     $num_medidor  = "'".$_POST['num_medidor']."'";
     $tipo_rede    = "'".$_POST['tipo_rede']."'";
     $login        = "'".$_POST['login']."'";
     $senha        = "'".$_POST['senha']."'";
+    $perfil       = "'".$_POST['perfil']."'";
+    $termos_uso   = "'".$_POST['termos_uso']."'";
     $rede         = "'".$_POST['rede']."'";
     $senha_rede   = "'".$_POST['senha_rede']."'";
     $ativo        = "'".$_POST['ativo']."'";
 
+
     $sql_valida = "SELECT * FROM cadastro_cliente WHERE login = $login";
 
-    $sql_inserir  = "INSERT INTO cadastro_cliente (nome,num_medidor,tipo_rede,termos_uso,login,senha,perfil,rede,senha_rede,ativo)
-                   VALUES ($nome,$num_medidor, $tipo_rede,1,$login,$senha,'U',$rede,$senha_rede,$ativo)";
+    $sql_inserir  = "UPDATE cadastro_cliente SET nome        = $nome,
+                                                 num_medidor = $num_medidor,
+                                                 tipo_rede   = $tipo_rede,
+                                                 termos_uso  = $termos_uso,
+                                                 login       = $login,
+                                                 senha       = $senha,
+                                                 perfil      = $perfil,
+                                                 rede        = $rede,
+                                                 senha_rede  = $senha_rede,
+                                                 ativo       = $ativo
+                     WHERE login = $login";
 
     $result_valida = $conn->query($sql_valida);
 
 
-    if ($result_valida->num_rows > 0) {
+    if ($result_valida->num_rows == 0) {
 
         $response["autorizado"]  = false;
-        $response["mensagem"]    = "login ja existente";
+        $response["mensagem"]    = "Usuario não existente";
 
     }else{     
     
         $result2 = $conn->query($sql_inserir);
 
         $response["autorizado"]  = true;
-        $response["mensagem"]    = "Usuario criado";
+        $response["mensagem"]    = "Usuario alterado";
     
     }
     

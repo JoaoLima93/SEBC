@@ -15,12 +15,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         die("Ops, falhou....: " . $conn->connect_error);
     }
 
-    $id_tarifa        = "'".$_POST['id_tarifa']."'";
-    $nome_tarifa      = "'".$_POST['nome_tarifa']."'";
+    $nome          = "'".$_POST['nome']."'";
+    $qtnd_fases    = "'".$_POST['qtnd_fases']."'";
+    $qtnd_fios     = "'".$_POST['qtnd_fios']."'";
 
-    $sql_valida = "SELECT * FROM tarifas WHERE id_tarifa = $id_tarifa or nome_tarifa =$nome_tarifa";
+    $sql_valida = "SELECT * FROM tipo_rede WHERE nome = $nome";
 
-    $sql_deleta = "DELETE FROM tarifas WHERE id_tarifa = $id_tarifa or nome_tarifa =$nome_tarifa";
+    $sql_inserir  = "UPDATE tipo_rede set nome       = $nome,
+                                          qtnd_fases = $qtnd_fases,
+                                          qtnd_fios  = $qtnd_fases
+                     WHERE nome = $nome";
 
     $result_valida = $conn->query($sql_valida);
 
@@ -28,14 +32,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     if ($result_valida->num_rows == 0) {
 
         $response["autorizado"]  = false;
-        $response["mensagem"]    = "Não foi encontrado tarifa para deletar";
+        $response["mensagem"]    = "Tipo_rede não existente";
 
     }else{     
     
-        $result2 = $conn->query($sql_deleta);
+        $result2 = $conn->query($sql_inserir);
 
         $response["autorizado"]  = true;
-        $response["mensagem"]    = "Tarifa deletada";
+        $response["mensagem"]    = "Tipo_rede alterada";
     
     }
     

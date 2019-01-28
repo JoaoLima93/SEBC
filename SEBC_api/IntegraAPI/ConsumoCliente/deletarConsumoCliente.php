@@ -30,10 +30,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $result_valida = $conn->query($sql_valida);
 
 
-    if ($result_valida->num_rows > 0) {
+    if ($result_valida->num_rows == 0) {
 
         $response["autorizado"]  = false;
-        $response["mensagem"]    = "Não foi encontrado tarifa para deletar";
+        $response["mensagem"]    = "Não foi encontrado consumo para deletar";
 
     }else{     
     

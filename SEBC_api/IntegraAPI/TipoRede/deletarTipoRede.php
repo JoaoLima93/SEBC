@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $result_valida = $conn->query($sql_valida);
 
 
-    if ($result_valida->num_rows > 0) {
+    if ($result_valida->num_rows == 0) {
 
         $response["autorizado"]  = false;
         $response["mensagem"]    = "Nao foi encontrado tipo_rede para deletar";

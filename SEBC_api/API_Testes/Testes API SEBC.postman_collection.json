@@ -1,244 +1,1022 @@
 {
-	"id": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
-	"name": "Testes API SEBC",
-	"description": "",
-	"order": [
-		"467b897e-48ba-fb4a-8548-17b7cbee808d",
-		"60b8ed25-8de2-df84-4421-272cdc903a93",
-		"029b6dba-03e1-229c-6f47-185606ead7f3",
-		"db157b84-0797-ddda-f49b-1336efeabd6b"
-	],
-	"folders": [],
-	"folders_order": [],
-	"timestamp": 1547503436638,
-	"owner": "5890659",
-	"public": false,
-	"requests": [
+	"variables": [],
+	"info": {
+		"name": "Testes API SEBC",
+		"_postman_id": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "029b6dba-03e1-229c-6f47-185606ead7f3",
-			"headers": "",
-			"headerData": [],
-			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/inserirTarifa.php",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "POST",
-			"data": [
-				{
-					"key": "id_tarifa",
-					"value": "99",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "nome_tarifa",
-					"value": "teste",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "tarifa_dinamica",
-					"value": "T",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "periodo_consumo",
-					"value": "teste",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "preco_kwh",
-					"value": "50",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "inicio_periodo",
-					"value": "00:20:00",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "fim_periodo",
-					"value": "20:05:00",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "aceita_bandeira",
-					"value": "T",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1547508554445,
-			"name": "inserirTarifas",
-			"description": "Testa a inclusão de novos usuários.",
-			"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
-			"responses": []
-		},
-		{
-			"id": "467b897e-48ba-fb4a-8548-17b7cbee808d",
-			"headers": "",
-			"headerData": [],
-			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/validaUsuario.php",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
-			"data": [
-				{
-					"key": "login",
-					"value": "pedro.lima",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "senha",
-					"value": "pedro.lima",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"name": "validaUsuario",
+			"name": "IntegraSE Testes",
 			"description": "",
-			"descriptionFormat": "html",
-			"time": 1547506706764,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {}
+			"item": [
+				{
+					"name": "incluiConsumo",
+					"request": {
+						"url": {
+							"raw": "http://{{ip_maquina}}/sebc/IntegraSE/incluiConsumo.php?id_cliente=1&leitura_a=10&leitura_b=leitura_b&hora_consumo=00:08:22",
+							"protocol": "http",
+							"host": [
+								"{{ip_maquina}}"
+							],
+							"path": [
+								"sebc",
+								"IntegraSE",
+								"incluiConsumo.php"
+							],
+							"query": [
+								{
+									"key": "id_cliente",
+									"value": "1",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "leitura_a",
+									"value": "10",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "leitura_b",
+									"value": "leitura_b",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "hora_consumo",
+									"value": "00:08:22",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "login",
+									"value": "pedro.lima",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "senha",
+									"value": "pedro.lima",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "vinculaCliente",
+					"request": {
+						"url": {
+							"raw": "http://{{ip_maquina}}/sebc/IntegraSE/vinculaCliente.php?num_medidor=22051993",
+							"protocol": "http",
+							"host": [
+								"{{ip_maquina}}"
+							],
+							"path": [
+								"sebc",
+								"IntegraSE",
+								"vinculaCliente.php"
+							],
+							"query": [
+								{
+									"key": "num_medidor",
+									"value": "22051993",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "login",
+									"value": "pedro.lima",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "senha",
+									"value": "pedro.lima",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
 		},
 		{
-			"id": "60b8ed25-8de2-df84-4421-272cdc903a93",
-			"headers": "",
-			"headerData": [],
-			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/inserirUsuario.php",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "POST",
-			"data": [
-				{
-					"key": "nome",
-					"value": "tadeu",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "num_medidor",
-					"value": "220593",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "tipo_rede",
-					"value": "2",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "termos_uso",
-					"value": "T",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "login",
-					"value": "tadeu",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "senha",
-					"value": "adsfsdf",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "perfil",
-					"value": "a",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1547506791156,
-			"name": "inserirUsuario",
-			"description": "Testa a inclusão de novos usuários.",
-			"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
-			"responses": []
-		},
-		{
-			"id": "db157b84-0797-ddda-f49b-1336efeabd6b",
-			"headers": "",
-			"headerData": [],
-			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/listaTarifaAtual.php",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "GET",
-			"data": [
-				{
-					"key": "login",
-					"value": "pedro.lima",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "senha",
-					"value": "pedro.lima",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"version": 2,
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1547508599385,
-			"name": "listaTarifaAtual",
+			"name": "IntegraAPI Testes",
 			"description": "",
-			"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
-			"responses": []
+			"item": [
+				{
+					"name": "consumoCliente",
+					"description": "",
+					"item": [
+						{
+							"name": "listaConsumoCliente",
+							"request": {
+								"url": {
+									"raw": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/listaConsumoClientes.php?id_cliente=1",
+									"protocol": "http",
+									"host": [
+										"{{ip_maquina}}"
+									],
+									"path": [
+										"sebc",
+										"IntegraAPI",
+										"ConsumoCliente",
+										"listaConsumoClientes.php"
+									],
+									"query": [
+										{
+											"key": "id_cliente",
+											"value": "1",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "login",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "senha",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "listaCustosTarifaComum",
+							"request": {
+								"url": {
+									"raw": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/listaCustoTarifaComum.php?id_cliente=1",
+									"protocol": "http",
+									"host": [
+										"{{ip_maquina}}"
+									],
+									"path": [
+										"sebc",
+										"IntegraAPI",
+										"ConsumoCliente",
+										"listaCustoTarifaComum.php"
+									],
+									"query": [
+										{
+											"key": "id_cliente",
+											"value": "1",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "login",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "senha",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "listaCustosTarifaBranca",
+							"request": {
+								"url": {
+									"raw": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/listaCustoTarifaBranca.php?id_cliente=1",
+									"protocol": "http",
+									"host": [
+										"{{ip_maquina}}"
+									],
+									"path": [
+										"sebc",
+										"IntegraAPI",
+										"ConsumoCliente",
+										"listaCustoTarifaBranca.php"
+									],
+									"query": [
+										{
+											"key": "id_cliente",
+											"value": "1",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "login",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "senha",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "deletarConsumoCliente",
+							"request": {
+								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/deletarConsumoCliente.php",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id_cliente",
+											"value": "1",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "data_inicio",
+											"value": "",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "data_fim",
+											"value": "",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": "Testa a inclusão de novos usuários."
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "postosTarifarios",
+					"description": "",
+					"item": [
+						{
+							"name": "inserirTarifas",
+							"request": {
+								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/inserirTarifa.php",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id_tarifa",
+											"value": "99",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "nome_tarifa",
+											"value": "testes",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "tarifa_dinamica",
+											"value": "T",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "periodo_consumo",
+											"value": "teste",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "preco_kwh",
+											"value": "50",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "inicio_periodo",
+											"value": "00:20:00",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "fim_periodo",
+											"value": "20:05:00",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "aceita_bandeira",
+											"value": "T",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": "Testa a inclusão de novos usuários."
+							},
+							"response": []
+						},
+						{
+							"name": "alterarTarifas",
+							"request": {
+								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/alterarTarifa.php",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "id_tarifa",
+											"value": "99",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "nome_tarifa",
+											"value": "teste_altera",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "tarifa_dinamica",
+											"value": "T",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "periodo_consumo",
+											"value": "teste",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "preco_kwh",
+											"value": "505",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "inicio_periodo",
+											"value": "00:20:00",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "fim_periodo",
+											"value": "20:05:00",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "aceita_bandeira",
+											"value": "T",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": "Testa a inclusão de novos usuários."
+							},
+							"response": []
+						},
+						{
+							"name": "listaTarifaAtual",
+							"request": {
+								"url": {
+									"raw": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/listaTarifaAtual.php?id_tarifa=2&tarifa_dinamica=T",
+									"protocol": "http",
+									"host": [
+										"{{ip_maquina}}"
+									],
+									"path": [
+										"sebc",
+										"IntegraAPI",
+										"Tarifa",
+										"listaTarifaAtual.php"
+									],
+									"query": [
+										{
+											"key": "id_tarifa",
+											"value": "2",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "tarifa_dinamica",
+											"value": "T",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "login",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "senha",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "novoUsuario",
+					"description": "",
+					"item": [
+						{
+							"name": "inserirUsuario",
+							"request": {
+								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/inserirUsuario.php",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nome",
+											"value": "tadeu",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "num_medidor",
+											"value": "220593",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "tipo_rede",
+											"value": "2",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "termos_uso",
+											"value": "T",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "login",
+											"value": "tadeu",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "senha",
+											"value": "adsfsdf",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "perfil",
+											"value": "a",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": "Testa a inclusão de novos usuários."
+							},
+							"response": []
+						},
+						{
+							"name": "alterarUsuario",
+							"request": {
+								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/alterarUsuario.php",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nome",
+											"value": "xicao",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "num_medidor",
+											"value": "220593",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "tipo_rede",
+											"value": "2",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "termos_uso",
+											"value": "T",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "login",
+											"value": "tadeu",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "senha",
+											"value": "adsfsdf",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "perfil",
+											"value": "a",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "rede",
+											"value": "cavaloDeTroia",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "senha_rede",
+											"value": "aaaaaaa",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "ativo",
+											"value": "F",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": "Testa a inclusão de novos usuários."
+							},
+							"response": []
+						},
+						{
+							"name": "listaUsuario",
+							"request": {
+								"url": {
+									"raw": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/listaUsuario.php?nome=Joao Lima&id=3&num_medidor",
+									"protocol": "http",
+									"host": [
+										"{{ip_maquina}}"
+									],
+									"path": [
+										"sebc",
+										"IntegraAPI",
+										"Usuario",
+										"listaUsuario.php"
+									],
+									"query": [
+										{
+											"key": "nome",
+											"value": "Joao Lima",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "id",
+											"value": "3",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "num_medidor",
+											"value": "",
+											"equals": false,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "login",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "senha",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "validaUsuario",
+							"request": {
+								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/validaUsuario.php",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "login",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "senha",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "tipoRede",
+					"description": "",
+					"item": [
+						{
+							"name": "inserirTipoRede",
+							"request": {
+								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/inserirTipoRede.php",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nome",
+											"value": "teste",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "qtnd_fases",
+											"value": "9",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "qtnd_fios",
+											"value": "9",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": "Testa a inclusão de novos usuários."
+							},
+							"response": []
+						},
+						{
+							"name": "alterarTipoRede",
+							"request": {
+								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/alterarTipoRede.php",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nome",
+											"value": "teste",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "qtnd_fases",
+											"value": "99",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "qtnd_fios",
+											"value": "111",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": "Testa a inclusão de novos usuários."
+							},
+							"response": []
+						},
+						{
+							"name": "listaTipoRede",
+							"request": {
+								"url": {
+									"raw": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/listaTipoRede.php?id=3&nome=",
+									"protocol": "http",
+									"host": [
+										"{{ip_maquina}}"
+									],
+									"path": [
+										"sebc",
+										"IntegraAPI",
+										"TipoRede",
+										"listaTipoRede.php"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "nome",
+											"value": "",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "login",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "senha",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "deletarTipoRede",
+							"request": {
+								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/deletarTipoRede.php",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "nome",
+											"value": "teste",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "id",
+											"value": "5",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": "Testa a inclusão de novos usuários."
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "feriados",
+					"description": "",
+					"item": [
+						{
+							"name": "inserirFeriados",
+							"request": {
+								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/inserirFeriados.php",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "data",
+											"value": "2019-01-25",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "dia_util",
+											"value": "T",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": "Testa a inclusão de novos usuários."
+							},
+							"response": []
+						},
+						{
+							"name": "alterarFeriados",
+							"request": {
+								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/alterarFeriados.php",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "data",
+											"value": "2019-01-25",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "dia_util",
+											"value": "F",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": "Testa a inclusão de novos usuários."
+							},
+							"response": []
+						},
+						{
+							"name": "listaFeriados",
+							"request": {
+								"url": {
+									"raw": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/alterarFeriados.php?data_inicio=2019-01-25&data_fim=2019-01-28",
+									"protocol": "http",
+									"host": [
+										"{{ip_maquina}}"
+									],
+									"path": [
+										"sebc",
+										"IntegraAPI",
+										"Feriados",
+										"alterarFeriados.php"
+									],
+									"query": [
+										{
+											"key": "data_inicio",
+											"value": "2019-01-25",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "data_fim",
+											"value": "2019-01-28",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "login",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "senha",
+											"value": "pedro.lima",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "deletarFeriado",
+							"request": {
+								"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/deletarFeriados.php",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "data",
+											"value": "2019-01-25",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
 		}
 	]
 }

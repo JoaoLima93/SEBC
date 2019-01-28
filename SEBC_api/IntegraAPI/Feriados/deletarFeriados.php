@@ -15,12 +15,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         die("Ops, falhou....: " . $conn->connect_error);
     }
 
-    $id_tarifa        = "'".$_POST['id_tarifa']."'";
-    $nome_tarifa      = "'".$_POST['nome_tarifa']."'";
+    $data        = "'".$_POST['data']."'";
 
-    $sql_valida = "SELECT * FROM tarifas WHERE id_tarifa = $id_tarifa or nome_tarifa =$nome_tarifa";
+    $sql_valida = "SELECT * FROM feriados WHERE data = $data";
 
-    $sql_deleta = "DELETE FROM tarifas WHERE id_tarifa = $id_tarifa or nome_tarifa =$nome_tarifa";
+    $sql_deleta = "DELETE FROM feriados WHERE data = $data";
 
     $result_valida = $conn->query($sql_valida);
 
@@ -28,14 +27,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     if ($result_valida->num_rows == 0) {
 
         $response["autorizado"]  = false;
-        $response["mensagem"]    = "Não foi encontrado tarifa para deletar";
+        $response["mensagem"]    = "Nao foi encontrado feriados para deletar";
 
     }else{     
     
         $result2 = $conn->query($sql_deleta);
 
         $response["autorizado"]  = true;
-        $response["mensagem"]    = "Tarifa deletada";
+        $response["mensagem"]    = "Feriado deletada";
     
     }
     
