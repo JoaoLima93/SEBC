@@ -189,6 +189,8 @@ void loop() {
          url += leitura_a;
          url += "&leitura_b=";
          url += leitura_b;
+         url += "&leitura_c=";
+         url += leitura_c;
          url += "&id_cliente=";
          url += id_cliente;
          url += "&hora_consumo=";
