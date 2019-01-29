@@ -1,0 +1,2928 @@
+{
+	"id": "2320c7c3-21c0-5931-6365-217ea5026a7f",
+	"name": "Testes API SEBC",
+	"allTests": [],
+	"timestamp": 1548722869503,
+	"collection_id": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "f1f383e2-2952-80e8-0668-6d7b8c64d3aa",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+		"name": "Testes API SEBC",
+		"description": "",
+		"order": [],
+		"folders": [
+			{
+				"name": "IntegraAPI Testes",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"collection": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"order": [],
+				"owner": "5890659",
+				"folders_order": [
+					"ecfdd66e-12c2-1349-5c72-605c870c6de1",
+					"c64ebefb-fb8a-1ced-ca82-44157155f22e",
+					"6608c0b9-ffb7-07bb-1421-5cf576cd66f7",
+					"5226f3bd-22d8-a5cd-bb98-ac7b7c5d9a4b",
+					"f68e9593-43c0-41b9-1988-c8ca853e2d6d"
+				],
+				"createdAt": 1548627836211,
+				"updatedAt": 1548627836211,
+				"id": "04162f24-bf6b-8f1d-1f6a-bb5b7dfc8b4c",
+				"collection_id": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e"
+			},
+			{
+				"name": "IntegraSE Testes",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"collection": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"order": [
+					"64604177-887a-7c37-39f5-81d099d4c219",
+					"5d43c9a6-9806-adb9-77ad-a8f597a5ee58"
+				],
+				"owner": "5890659",
+				"folders_order": [],
+				"createdAt": 1548537980423,
+				"updatedAt": 1548537980423,
+				"id": "c845798b-7d20-44dd-b24d-5e26a63fbea5",
+				"collection_id": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e"
+			},
+			{
+				"name": "consumoCliente",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"collection": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"order": [
+					"bb590493-6092-c89f-c481-8bd343117a36",
+					"25ef2557-c88e-379f-4775-3b666364f6af",
+					"d03b62f8-c130-c564-0544-f244fd60bd36",
+					"cef9f754-04e1-895b-9f21-6e2e746f4e8e"
+				],
+				"owner": "5890659",
+				"folder": "04162f24-bf6b-8f1d-1f6a-bb5b7dfc8b4c",
+				"folders_order": [],
+				"createdAt": 1548636276686,
+				"updatedAt": 1548636276686,
+				"id": "ecfdd66e-12c2-1349-5c72-605c870c6de1",
+				"collection_id": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e"
+			},
+			{
+				"name": "feriados",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"collection": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"order": [
+					"7d212edd-4d1b-792f-d5d8-72e66c0a33b3",
+					"3bd28f4b-bb87-29cb-4929-d91e55e4e63f",
+					"3564fc34-e4c3-dde7-04d3-a5b04e5082e5",
+					"3414899d-c3bf-381f-a260-843db43f3db0"
+				],
+				"owner": "5890659",
+				"folder": "04162f24-bf6b-8f1d-1f6a-bb5b7dfc8b4c",
+				"folders_order": [],
+				"createdAt": 1548636457615,
+				"updatedAt": 1548636457615,
+				"id": "f68e9593-43c0-41b9-1988-c8ca853e2d6d",
+				"collection_id": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e"
+			},
+			{
+				"name": "novoUsuario",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"collection": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"order": [
+					"60b8ed25-8de2-df84-4421-272cdc903a93",
+					"aef5dce3-e802-922d-a9c4-b7ce657be351",
+					"467b897e-48ba-fb4a-8548-17b7cbee808d",
+					"4128d42f-98f7-9991-8dcc-1806d8c9c8c5"
+				],
+				"owner": "5890659",
+				"folder": "04162f24-bf6b-8f1d-1f6a-bb5b7dfc8b4c",
+				"folders_order": [],
+				"createdAt": 1548636364919,
+				"updatedAt": 1548636364919,
+				"id": "6608c0b9-ffb7-07bb-1421-5cf576cd66f7",
+				"collection_id": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e"
+			},
+			{
+				"name": "postosTarifarios",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"collection": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"order": [
+					"029b6dba-03e1-229c-6f47-185606ead7f3",
+					"96948531-0d13-9e67-fffb-39817584b9e8",
+					"b07f8e3e-220e-0000-e905-0148047466ec",
+					"db157b84-0797-ddda-f49b-1336efeabd6b"
+				],
+				"owner": "5890659",
+				"folder": "04162f24-bf6b-8f1d-1f6a-bb5b7dfc8b4c",
+				"folders_order": [],
+				"createdAt": 1548636331089,
+				"updatedAt": 1548636331089,
+				"id": "c64ebefb-fb8a-1ced-ca82-44157155f22e",
+				"collection_id": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e"
+			},
+			{
+				"name": "tipoRede",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"collection": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"order": [
+					"e40d83f7-5d60-a860-b93e-d01d8bde0ff4",
+					"d8f42a25-b2a4-50dc-cace-96a43126276c",
+					"9bec6ff1-41e0-2d10-6bae-11c95dbee997",
+					"a3f904bf-4ebf-7df3-39d4-12a30f5cb0ee"
+				],
+				"owner": "5890659",
+				"folder": "04162f24-bf6b-8f1d-1f6a-bb5b7dfc8b4c",
+				"folders_order": [],
+				"createdAt": 1548636457615,
+				"updatedAt": 1548636457615,
+				"id": "5226f3bd-22d8-a5cd-bb98-ac7b7c5d9a4b",
+				"collection_id": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e"
+			}
+		],
+		"folders_order": [
+			"c845798b-7d20-44dd-b24d-5e26a63fbea5",
+			"04162f24-bf6b-8f1d-1f6a-bb5b7dfc8b4c"
+		],
+		"requests": [
+			{
+				"id": "029b6dba-03e1-229c-6f47-185606ead7f3",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/inserirTarifa.php",
+				"folder": "c64ebefb-fb8a-1ced-ca82-44157155f22e",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": [
+					{
+						"key": "id_tarifa",
+						"value": "99",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "nome_tarifa",
+						"value": "testes",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "tarifa_dinamica",
+						"value": "T",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "periodo_consumo",
+						"value": "teste",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "preco_kwh",
+						"value": "50",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "inicio_periodo",
+						"value": "00:20:00",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "fim_periodo",
+						"value": "20:05:00",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "aceita_bandeira",
+						"value": "T",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Autizado OK\"] = jsonData.autorizado === true;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722120874,
+				"name": "inserirTarifas",
+				"description": "Testa a inclusão de novos usuários.",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "25ef2557-c88e-379f-4775-3b666364f6af",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/listaCustoTarifaComum.php?id_cliente=1",
+				"folder": "ecfdd66e-12c2-1349-5c72-605c870c6de1",
+				"queryParams": [
+					{
+						"key": "id_cliente",
+						"value": "1",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					}
+				],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "GET",
+				"data": [
+					{
+						"key": "login",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "senha",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"CustoComum OK\"] = jsonData.consumo !== null;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722041049,
+				"name": "listaCustosTarifaComum",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "3414899d-c3bf-381f-a260-843db43f3db0",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/deletarFeriados.php",
+				"folder": "f68e9593-43c0-41b9-1988-c8ca853e2d6d",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": [
+					{
+						"key": "data",
+						"value": "2019-01-25",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Autizado OK\"] = jsonData.autorizado === true;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722464424,
+				"name": "deletarFeriado",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "3564fc34-e4c3-dde7-04d3-a5b04e5082e5",
+				"owner": "5890659",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/alterarFeriados.php?data_inicio=2019-01-25&data_fim=2019-01-28",
+				"folder": "f68e9593-43c0-41b9-1988-c8ca853e2d6d",
+				"queryParams": [
+					{
+						"key": "data_inicio",
+						"value": "2019-01-25",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					},
+					{
+						"key": "data_fim",
+						"value": "2019-01-28",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					}
+				],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "GET",
+				"data": [
+					{
+						"key": "login",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "senha",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548642071399,
+				"name": "listaFeriados",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": [],
+				"timestamp": null
+			},
+			{
+				"id": "3bd28f4b-bb87-29cb-4929-d91e55e4e63f",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/alterarFeriados.php",
+				"folder": "f68e9593-43c0-41b9-1988-c8ca853e2d6d",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": [
+					{
+						"key": "data",
+						"value": "2019-01-25",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "dia_util",
+						"value": "F",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Autizado OK\"] = jsonData.autorizado === true;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722450453,
+				"name": "alterarFeriados",
+				"description": "Testa a inclusão de novos usuários.",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "4128d42f-98f7-9991-8dcc-1806d8c9c8c5",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/listaUsuario.php?nome=Joao Lima&id=3&num_medidor",
+				"folder": "6608c0b9-ffb7-07bb-1421-5cf576cd66f7",
+				"queryParams": [
+					{
+						"key": "nome",
+						"value": "Joao Lima",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					},
+					{
+						"key": "id",
+						"value": "3",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					},
+					{
+						"key": "num_medidor",
+						"value": "",
+						"equals": false,
+						"description": "",
+						"enabled": true
+					}
+				],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "GET",
+				"data": [
+					{
+						"key": "login",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "senha",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Clientes OK\"] = jsonData.clientes !== null;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722302355,
+				"name": "listaUsuario",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "467b897e-48ba-fb4a-8548-17b7cbee808d",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/validaUsuario.php",
+				"folder": "6608c0b9-ffb7-07bb-1421-5cf576cd66f7",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": [
+					{
+						"key": "login",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "senha",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Autizado OK\"] = jsonData.autorizado === true;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722269569,
+				"name": "validaUsuario",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "5d43c9a6-9806-adb9-77ad-a8f597a5ee58",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraSE/vinculaCliente.php?num_medidor=22051993",
+				"folder": "c845798b-7d20-44dd-b24d-5e26a63fbea5",
+				"queryParams": [
+					{
+						"key": "num_medidor",
+						"value": "22051993",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					}
+				],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "GET",
+				"data": [
+					{
+						"key": "login",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "senha",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722778403,
+				"name": "vinculaCliente",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "60b8ed25-8de2-df84-4421-272cdc903a93",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/inserirUsuario.php",
+				"folder": "6608c0b9-ffb7-07bb-1421-5cf576cd66f7",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": [
+					{
+						"key": "nome",
+						"value": "dsafasd",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "num_medidor",
+						"value": "22059316565",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "tipo_rede",
+						"value": "2",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "termos_uso",
+						"value": "T",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "login",
+						"value": "tadeuxxx",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "senha",
+						"value": "adsfsdf",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "perfil",
+						"value": "a",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "rede",
+						"value": "etbilu",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "senha_rede",
+						"value": "buscar conhecimento",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "ativo",
+						"value": "T",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Autizado OK\"] = jsonData.autorizado === true;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722855548,
+				"name": "inserirUsuario",
+				"description": "Testa a inclusão de novos usuários.",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "64604177-887a-7c37-39f5-81d099d4c219",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraSE/incluiConsumo.php?id_cliente=1&leitura_a=10&leitura_b=leitura_b&hora_consumo=00:08:22",
+				"folder": "c845798b-7d20-44dd-b24d-5e26a63fbea5",
+				"queryParams": [
+					{
+						"key": "id_cliente",
+						"value": "1",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					},
+					{
+						"key": "leitura_a",
+						"value": "10",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					},
+					{
+						"key": "leitura_b",
+						"value": "leitura_b",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					},
+					{
+						"key": "hora_consumo",
+						"value": "00:08:22",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					}
+				],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "GET",
+				"data": [
+					{
+						"key": "login",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "senha",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\n",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722772534,
+				"name": "incluiConsumo",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "7d212edd-4d1b-792f-d5d8-72e66c0a33b3",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/inserirFeriados.php",
+				"folder": "f68e9593-43c0-41b9-1988-c8ca853e2d6d",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": [
+					{
+						"key": "data",
+						"value": "2019-01-25",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "dia_util",
+						"value": "T",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Autizado OK\"] = jsonData.autorizado === true;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722451842,
+				"name": "inserirFeriados",
+				"description": "Testa a inclusão de novos usuários.",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "90d452d8-cf0d-5f96-84fb-b5a16ab2962b",
+				"owner": "5890659",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/deletarTarifa.php",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": [
+					{
+						"key": "id_tarifa",
+						"value": "",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "nome_tarifa",
+						"value": "teste_altera",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": null,
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548639304867,
+				"name": "deletarTarifa",
+				"description": "Testa a inclusão de novos usuários.",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": [],
+				"isFromCollection": true,
+				"timestamp": null
+			},
+			{
+				"id": "96948531-0d13-9e67-fffb-39817584b9e8",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/alterarTarifa.php",
+				"folder": "c64ebefb-fb8a-1ced-ca82-44157155f22e",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": [
+					{
+						"key": "id_tarifa",
+						"value": "99",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "nome_tarifa",
+						"value": "teste_altera",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "tarifa_dinamica",
+						"value": "T",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "periodo_consumo",
+						"value": "teste",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "preco_kwh",
+						"value": "505",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "inicio_periodo",
+						"value": "00:20:00",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "fim_periodo",
+						"value": "20:05:00",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "aceita_bandeira",
+						"value": "T",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Autizado OK\"] = jsonData.autorizado === true;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722119002,
+				"name": "alterarTarifas",
+				"description": "Testa a inclusão de novos usuários.",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "9bec6ff1-41e0-2d10-6bae-11c95dbee997",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/listaTipoRede.php?id=3&nome=",
+				"folder": "5226f3bd-22d8-a5cd-bb98-ac7b7c5d9a4b",
+				"queryParams": [
+					{
+						"key": "id",
+						"value": "3",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					},
+					{
+						"key": "nome",
+						"value": "",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					}
+				],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "GET",
+				"data": [
+					{
+						"key": "login",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "senha",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Tipo_rede OK\"] = jsonData.tipo_rede !== null;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722414689,
+				"name": "listaTipoRede",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "a3f904bf-4ebf-7df3-39d4-12a30f5cb0ee",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/deletarTipoRede.php",
+				"folder": "5226f3bd-22d8-a5cd-bb98-ac7b7c5d9a4b",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": [
+					{
+						"key": "nome",
+						"value": "teste",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "id",
+						"value": "5",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Autizado OK\"] = jsonData.autorizado === true;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722394753,
+				"name": "deletarTipoRede",
+				"description": "Testa a inclusão de novos usuários.",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "aef5dce3-e802-922d-a9c4-b7ce657be351",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/alterarUsuario.php",
+				"folder": "6608c0b9-ffb7-07bb-1421-5cf576cd66f7",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": [
+					{
+						"key": "nome",
+						"value": "xicao",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "num_medidor",
+						"value": "220593",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "tipo_rede",
+						"value": "2",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "termos_uso",
+						"value": "T",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "login",
+						"value": "tadeu",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "senha",
+						"value": "adsfsdf",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "perfil",
+						"value": "a",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "rede",
+						"value": "cavaloDeTroia",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "senha_rede",
+						"value": "aaaaaaa",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "ativo",
+						"value": "F",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Autizado OK\"] = jsonData.autorizado === true;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722260925,
+				"name": "alterarUsuario",
+				"description": "Testa a inclusão de novos usuários.",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "b07f8e3e-220e-0000-e905-0148047466ec",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/deletarTarifa.php",
+				"folder": "c64ebefb-fb8a-1ced-ca82-44157155f22e",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": [
+					{
+						"key": "nome_tarifa",
+						"value": "teste_altera",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "id_tarifa",
+						"value": "",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Autizado OK\"] = jsonData.autorizado === true;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548721898481,
+				"name": "deletarTarifas",
+				"description": "Testa a inclusão de novos usuários.",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "bb590493-6092-c89f-c481-8bd343117a36",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/listaConsumoClientes.php?id_cliente=1",
+				"folder": "ecfdd66e-12c2-1349-5c72-605c870c6de1",
+				"queryParams": [
+					{
+						"key": "id_cliente",
+						"value": "1",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					}
+				],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "GET",
+				"data": [
+					{
+						"key": "login",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "senha",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Consumo OK\"] = jsonData.consumo !== null;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548721997080,
+				"name": "listaConsumoCliente",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "cef9f754-04e1-895b-9f21-6e2e746f4e8e",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/deletarConsumoCliente.php",
+				"folder": "ecfdd66e-12c2-1349-5c72-605c870c6de1",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": [
+					{
+						"key": "id_cliente",
+						"value": "1",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "data_inicio",
+						"value": "",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "data_fim",
+						"value": "",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Autizado OK\"] = jsonData.autorizado === false;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722309270,
+				"name": "deletarConsumoCliente",
+				"description": "Testa a inclusão de novos usuários.",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "d03b62f8-c130-c564-0544-f244fd60bd36",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/listaCustoTarifaBranca.php?id_cliente=1",
+				"folder": "ecfdd66e-12c2-1349-5c72-605c870c6de1",
+				"queryParams": [
+					{
+						"key": "id_cliente",
+						"value": "1",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					}
+				],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "GET",
+				"data": [
+					{
+						"key": "login",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "senha",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"CustoBranca OK\"] = jsonData.custo_branca !== null;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722027131,
+				"name": "listaCustosTarifaBranca",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "d8f42a25-b2a4-50dc-cace-96a43126276c",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/alterarTipoRede.php",
+				"folder": "5226f3bd-22d8-a5cd-bb98-ac7b7c5d9a4b",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": [
+					{
+						"key": "nome",
+						"value": "teste",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "qtnd_fases",
+						"value": "99",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "qtnd_fios",
+						"value": "111",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Autizado OK\"] = jsonData.autorizado === true;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722374719,
+				"name": "alterarTipoRede",
+				"description": "Testa a inclusão de novos usuários.",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "db157b84-0797-ddda-f49b-1336efeabd6b",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/listaTarifaAtual.php?id_tarifa=2&tarifa_dinamica=T",
+				"folder": "c64ebefb-fb8a-1ced-ca82-44157155f22e",
+				"queryParams": [
+					{
+						"key": "id_tarifa",
+						"value": "2",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					},
+					{
+						"key": "tarifa_dinamica",
+						"value": "T",
+						"equals": true,
+						"description": "",
+						"enabled": true
+					}
+				],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "GET",
+				"data": [
+					{
+						"key": "login",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "senha",
+						"value": "pedro.lima",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"tarifas OK\"] = jsonData.autorizado !== null;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722145250,
+				"name": "listaTarifaAtual",
+				"description": "",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			},
+			{
+				"id": "e40d83f7-5d60-a860-b93e-d01d8bde0ff4",
+				"headers": "",
+				"headerData": [],
+				"url": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/inserirTipoRede.php",
+				"folder": "5226f3bd-22d8-a5cd-bb98-ac7b7c5d9a4b",
+				"queryParams": [],
+				"preRequestScript": null,
+				"pathVariables": {},
+				"pathVariableData": [],
+				"method": "POST",
+				"data": [
+					{
+						"key": "nome",
+						"value": "teste",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "qtnd_fases",
+						"value": "9",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					},
+					{
+						"key": "qtnd_fios",
+						"value": "9",
+						"description": "",
+						"type": "text",
+						"enabled": true
+					}
+				],
+				"dataMode": "params",
+				"version": 2,
+				"tests": "tests[\"Status code is 200\"]= responseCode.code === 200;\r\n\r\nif(responseCode.code == 200) {\r\n    var jsonData = JSON.parse(responseBody);\r\n    tests[\"Autizado OK\"] = jsonData.autorizado === true;\r\n}",
+				"currentHelper": "normal",
+				"helperAttributes": {},
+				"time": 1548722365073,
+				"name": "inserirTipoRede",
+				"description": "Testa a inclusão de novos usuários.",
+				"collectionId": "790d556c-f7aa-5693-c1d9-7f4bd8f7b96e",
+				"responses": []
+			}
+		],
+		"timestamp": 1547503436638,
+		"synced": false,
+		"syncedFilename": "",
+		"remote_id": 0,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"owner": "5890659",
+		"subscribed": false,
+		"createdAt": 1547503436638,
+		"updatedAt": 1548722473627,
+		"write": true,
+		"published": false,
+		"favorite": false,
+		"permissions": {},
+		"syncedPermissions": {},
+		"sharedWithTeam": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"id": "64604177-887a-7c37-39f5-81d099d4c219",
+			"name": "incluiConsumo",
+			"url": "http://{{ip_maquina}}/sebc/IntegraSE/incluiConsumo.php?id_cliente=1&leitura_a=10&leitura_b=leitura_b&hora_consumo=00:08:22",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": 14,
+			"totalRequestTime": 14,
+			"iterationResults": {}
+		},
+		{
+			"id": "5d43c9a6-9806-adb9-77ad-a8f597a5ee58",
+			"name": "vinculaCliente",
+			"url": "http://{{ip_maquina}}/sebc/IntegraSE/vinculaCliente.php?num_medidor=22051993",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": 10,
+			"totalRequestTime": 10,
+			"iterationResults": {}
+		},
+		{
+			"id": "bb590493-6092-c89f-c481-8bd343117a36",
+			"name": "listaConsumoCliente",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/listaConsumoClientes.php?id_cliente=1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Consumo OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Consumo OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Consumo OK": true
+				}
+			],
+			"time": 8,
+			"totalRequestTime": 8,
+			"iterationResults": {}
+		},
+		{
+			"id": "25ef2557-c88e-379f-4775-3b666364f6af",
+			"name": "listaCustosTarifaComum",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/listaCustoTarifaComum.php?id_cliente=1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"CustoComum OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CustoComum OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"CustoComum OK": true
+				}
+			],
+			"time": 8,
+			"totalRequestTime": 8,
+			"iterationResults": {}
+		},
+		{
+			"id": "d03b62f8-c130-c564-0544-f244fd60bd36",
+			"name": "listaCustosTarifaBranca",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/listaCustoTarifaBranca.php?id_cliente=1",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"CustoBranca OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CustoBranca OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"CustoBranca OK": true
+				}
+			],
+			"time": 10,
+			"totalRequestTime": 10,
+			"iterationResults": {}
+		},
+		{
+			"id": "cef9f754-04e1-895b-9f21-6e2e746f4e8e",
+			"name": "deletarConsumoCliente",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/deletarConsumoCliente.php",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Autizado OK": true
+				}
+			],
+			"time": 9,
+			"totalRequestTime": 9,
+			"iterationResults": {}
+		},
+		{
+			"id": "029b6dba-03e1-229c-6f47-185606ead7f3",
+			"name": "inserirTarifas",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/inserirTarifa.php",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				94
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Autizado OK": true
+				}
+			],
+			"time": 94,
+			"totalRequestTime": 94,
+			"iterationResults": {}
+		},
+		{
+			"id": "96948531-0d13-9e67-fffb-39817584b9e8",
+			"name": "alterarTarifas",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/alterarTarifa.php",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				131
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Autizado OK": true
+				}
+			],
+			"time": 131,
+			"totalRequestTime": 131,
+			"iterationResults": {}
+		},
+		{
+			"id": "b07f8e3e-220e-0000-e905-0148047466ec",
+			"name": "deletarTarifas",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/deletarTarifa.php",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Autizado OK": true
+				}
+			],
+			"time": 158,
+			"totalRequestTime": 158,
+			"iterationResults": {}
+		},
+		{
+			"id": "db157b84-0797-ddda-f49b-1336efeabd6b",
+			"name": "listaTarifaAtual",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/listaTarifaAtual.php?id_tarifa=2&tarifa_dinamica=T",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"tarifas OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"tarifas OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				24
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"tarifas OK": true
+				}
+			],
+			"time": 24,
+			"totalRequestTime": 24,
+			"iterationResults": {}
+		},
+		{
+			"id": "60b8ed25-8de2-df84-4421-272cdc903a93",
+			"name": "inserirUsuario",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/inserirUsuario.php",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				64
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Autizado OK": true
+				}
+			],
+			"time": 64,
+			"totalRequestTime": 64,
+			"iterationResults": {}
+		},
+		{
+			"id": "aef5dce3-e802-922d-a9c4-b7ce657be351",
+			"name": "alterarUsuario",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/alterarUsuario.php",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				103
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Autizado OK": true
+				}
+			],
+			"time": 103,
+			"totalRequestTime": 103,
+			"iterationResults": {}
+		},
+		{
+			"id": "467b897e-48ba-fb4a-8548-17b7cbee808d",
+			"name": "validaUsuario",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/validaUsuario.php",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Autizado OK": true
+				}
+			],
+			"time": 14,
+			"totalRequestTime": 14,
+			"iterationResults": {}
+		},
+		{
+			"id": "4128d42f-98f7-9991-8dcc-1806d8c9c8c5",
+			"name": "listaUsuario",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/listaUsuario.php?nome=Joao Lima&id=3&num_medidor",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Clientes OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Clientes OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Clientes OK": true
+				}
+			],
+			"time": 9,
+			"totalRequestTime": 9,
+			"iterationResults": {}
+		},
+		{
+			"id": "e40d83f7-5d60-a860-b93e-d01d8bde0ff4",
+			"name": "inserirTipoRede",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/inserirTipoRede.php",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				79
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Autizado OK": true
+				}
+			],
+			"time": 79,
+			"totalRequestTime": 79,
+			"iterationResults": {}
+		},
+		{
+			"id": "d8f42a25-b2a4-50dc-cace-96a43126276c",
+			"name": "alterarTipoRede",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/alterarTipoRede.php",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				81
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Autizado OK": true
+				}
+			],
+			"time": 81,
+			"totalRequestTime": 81,
+			"iterationResults": {}
+		},
+		{
+			"id": "9bec6ff1-41e0-2d10-6bae-11c95dbee997",
+			"name": "listaTipoRede",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/listaTipoRede.php?id=3&nome=",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Tipo_rede OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipo_rede OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Tipo_rede OK": true
+				}
+			],
+			"time": 10,
+			"totalRequestTime": 10,
+			"iterationResults": {}
+		},
+		{
+			"id": "a3f904bf-4ebf-7df3-39d4-12a30f5cb0ee",
+			"name": "deletarTipoRede",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/deletarTipoRede.php",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				76
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Autizado OK": true
+				}
+			],
+			"time": 76,
+			"totalRequestTime": 76,
+			"iterationResults": {}
+		},
+		{
+			"id": "7d212edd-4d1b-792f-d5d8-72e66c0a33b3",
+			"name": "inserirFeriados",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/inserirFeriados.php",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				81
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Autizado OK": true
+				}
+			],
+			"time": 81,
+			"totalRequestTime": 81,
+			"iterationResults": {}
+		},
+		{
+			"id": "3bd28f4b-bb87-29cb-4929-d91e55e4e63f",
+			"name": "alterarFeriados",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/alterarFeriados.php",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				191
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Autizado OK": true
+				}
+			],
+			"time": 191,
+			"totalRequestTime": 191,
+			"iterationResults": {}
+		},
+		{
+			"id": "3564fc34-e4c3-dde7-04d3-a5b04e5082e5",
+			"name": "listaFeriados",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/alterarFeriados.php?data_inicio=2019-01-25&data_fim=2019-01-28",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			],
+			"time": 7,
+			"totalRequestTime": 7,
+			"iterationResults": {}
+		},
+		{
+			"id": "3414899d-c3bf-381f-a260-843db43f3db0",
+			"name": "deletarFeriado",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/deletarFeriados.php",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				107
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Autizado OK": true
+				}
+			],
+			"time": 107,
+			"totalRequestTime": 107,
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 40,
+	"totalFail": 0,
+	"totalTime": 1288,
+	"lifecycle": "done",
+	"willStop": false,
+	"requests": [
+		{
+			"name": "incluiConsumo",
+			"id": "64604177-887a-7c37-39f5-81d099d4c219",
+			"url": "http://{{ip_maquina}}/sebc/IntegraSE/incluiConsumo.php?id_cliente=1&leitura_a=10&leitura_b=leitura_b&hora_consumo=00:08:22",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200"
+			],
+			"gridData": [
+				[
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true
+			}
+		},
+		{
+			"name": "vinculaCliente",
+			"id": "5d43c9a6-9806-adb9-77ad-a8f597a5ee58",
+			"url": "http://{{ip_maquina}}/sebc/IntegraSE/vinculaCliente.php?num_medidor=22051993",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200"
+			],
+			"gridData": [
+				[
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true
+			}
+		},
+		{
+			"name": "listaConsumoCliente",
+			"id": "bb590493-6092-c89f-c481-8bd343117a36",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/listaConsumoClientes.php?id_cliente=1",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Consumo OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Consumo OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Consumo OK": true
+			}
+		},
+		{
+			"name": "listaCustosTarifaComum",
+			"id": "25ef2557-c88e-379f-4775-3b666364f6af",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/listaCustoTarifaComum.php?id_cliente=1",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CustoComum OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"CustoComum OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"CustoComum OK": true
+			}
+		},
+		{
+			"name": "listaCustosTarifaBranca",
+			"id": "d03b62f8-c130-c564-0544-f244fd60bd36",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/listaCustoTarifaBranca.php?id_cliente=1",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CustoBranca OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"CustoBranca OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"CustoBranca OK": true
+			}
+		},
+		{
+			"name": "deletarConsumoCliente",
+			"id": "cef9f754-04e1-895b-9f21-6e2e746f4e8e",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/ConsumoCliente/deletarConsumoCliente.php",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Autizado OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			}
+		},
+		{
+			"name": "inserirTarifas",
+			"id": "029b6dba-03e1-229c-6f47-185606ead7f3",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/inserirTarifa.php",
+			"time": 94,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Autizado OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			}
+		},
+		{
+			"name": "alterarTarifas",
+			"id": "96948531-0d13-9e67-fffb-39817584b9e8",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/alterarTarifa.php",
+			"time": 131,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Autizado OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			}
+		},
+		{
+			"name": "deletarTarifas",
+			"id": "b07f8e3e-220e-0000-e905-0148047466ec",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/deletarTarifa.php",
+			"time": 158,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Autizado OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			}
+		},
+		{
+			"name": "listaTarifaAtual",
+			"id": "db157b84-0797-ddda-f49b-1336efeabd6b",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Tarifa/listaTarifaAtual.php?id_tarifa=2&tarifa_dinamica=T",
+			"time": 24,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"tarifas OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"tarifas OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"tarifas OK": true
+			}
+		},
+		{
+			"name": "inserirUsuario",
+			"id": "60b8ed25-8de2-df84-4421-272cdc903a93",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/inserirUsuario.php",
+			"time": 64,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Autizado OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			}
+		},
+		{
+			"name": "alterarUsuario",
+			"id": "aef5dce3-e802-922d-a9c4-b7ce657be351",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/alterarUsuario.php",
+			"time": 103,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Autizado OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			}
+		},
+		{
+			"name": "validaUsuario",
+			"id": "467b897e-48ba-fb4a-8548-17b7cbee808d",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/validaUsuario.php",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Autizado OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			}
+		},
+		{
+			"name": "listaUsuario",
+			"id": "4128d42f-98f7-9991-8dcc-1806d8c9c8c5",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Usuario/listaUsuario.php?nome=Joao Lima&id=3&num_medidor",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Clientes OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Clientes OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Clientes OK": true
+			}
+		},
+		{
+			"name": "inserirTipoRede",
+			"id": "e40d83f7-5d60-a860-b93e-d01d8bde0ff4",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/inserirTipoRede.php",
+			"time": 79,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Autizado OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			}
+		},
+		{
+			"name": "alterarTipoRede",
+			"id": "d8f42a25-b2a4-50dc-cace-96a43126276c",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/alterarTipoRede.php",
+			"time": 81,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Autizado OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			}
+		},
+		{
+			"name": "listaTipoRede",
+			"id": "9bec6ff1-41e0-2d10-6bae-11c95dbee997",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/listaTipoRede.php?id=3&nome=",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tipo_rede OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Tipo_rede OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Tipo_rede OK": true
+			}
+		},
+		{
+			"name": "deletarTipoRede",
+			"id": "a3f904bf-4ebf-7df3-39d4-12a30f5cb0ee",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/TipoRede/deletarTipoRede.php",
+			"time": 76,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Autizado OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			}
+		},
+		{
+			"name": "inserirFeriados",
+			"id": "7d212edd-4d1b-792f-d5d8-72e66c0a33b3",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/inserirFeriados.php",
+			"time": 81,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Autizado OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			}
+		},
+		{
+			"name": "alterarFeriados",
+			"id": "3bd28f4b-bb87-29cb-4929-d91e55e4e63f",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/alterarFeriados.php",
+			"time": 191,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Autizado OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			}
+		},
+		{
+			"name": "listaFeriados",
+			"id": "3564fc34-e4c3-dde7-04d3-a5b04e5082e5",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/alterarFeriados.php?data_inicio=2019-01-25&data_fim=2019-01-28",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {},
+			"gridTitles": [],
+			"gridData": [
+				[]
+			],
+			"tests": {}
+		},
+		{
+			"name": "deletarFeriado",
+			"id": "3414899d-c3bf-381f-a260-843db43f3db0",
+			"url": "http://{{ip_maquina}}/sebc/IntegraAPI/Feriados/deletarFeriados.php",
+			"time": 107,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Autizado OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"gridTitles": [
+				"Status code is 200",
+				"Autizado OK"
+			],
+			"gridData": [
+				[
+					true,
+					true
+				]
+			],
+			"tests": {
+				"Status code is 200": true,
+				"Autizado OK": true
+			}
+		}
+	],
+	"synced": false
+}
