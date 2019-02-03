@@ -89,7 +89,7 @@ void setup() {
   pinMode(bootloader, INPUT);
 
   // Configurando Cliente
-  id_cliente =0;
+  id_cliente =3;
   
 }
 
@@ -181,7 +181,7 @@ void loop() {
       }
       Serial.println(inString);
    } 
-  id_cliente = inString.toInt();
+  id_cliente = 3;
   
   // URL de chamda da API
   String url = "/sebc/IntegraSE/incluiConsumo.php?";

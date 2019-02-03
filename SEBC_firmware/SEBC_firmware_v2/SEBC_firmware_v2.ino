@@ -19,7 +19,9 @@ As bibliotecas biblioteca foram utilizada pelos seguintes github:
 #include <SD.h>
 #include "EmonLib.h"         
 
-EnergyMonitor Monitor_Corrente;
+EnergyMonitor Monitor_A;
+EnergyMonitor Monitor_B;
+EnergyMonitor Monitor_C;
 File leituraSD;
 File leituraNaoIntegradaSD;
 
@@ -45,12 +47,15 @@ const char* inStringSE   = "";
 
 double Irms_a            = 0;
 double V_a               = 0;
+double fp_a              = 0;
 double leitura_a         = 0;
 double Irms_b            = 0;
 double V_b               = 0;
+double fp_b              = 0;
 double leitura_b         = 0;
 double Irms_c            = 0;
 double V_c               = 0;
+double fp_c              = 0;
 double leitura_c         = 0;
 
 int encontraBarra        = 0;                      // Variavel para quebrar a informação vinda da API
@@ -61,7 +66,15 @@ NTPClient timeClient(ntpUDP, "a.st1.ntp.br", -3 * 3600, 60000);
 
 void setup() {
   // Configuracao de Sensores
-  Monitor_Corrente.current(Sensores,37);
+  Monitor_A.current(Sensores,30);
+  Monitor_A.voltage(Sensores,71.1,1.7);
+
+  Monitor_B.current(Sensores,30);
+  Monitor_B.voltage(Sensores,71.1,1.7);
+
+  Monitor_C.current(Sensores,30);
+  Monitor_C.voltage(Sensores,71.1,1.7);
+  
   pinMode(Mux0, OUTPUT);
   pinMode(Mux1, OUTPUT);
   pinMode(Mux2, OUTPUT);
@@ -105,42 +118,40 @@ void loop() {
    digitalWrite(Led_Energia, HIGH);
     
    timeClient.update();                                 
-   digitalWrite(Mux0, LOW);
-   digitalWrite(Mux1, LOW);  
     
    //   Sensor de Potencia A
-   digitalWrite(Mux2, LOW);
-   V_a = (analogRead(Sensores)*2909/10000)-(23727/10000);
-   
-   digitalWrite(Mux2, HIGH);
-   Irms_a = Monitor_Corrente.calcIrms(1480);
-     
-   leitura_a = (V_a*Irms_a/1000);
- 
+   digitalWrite(Mux0, LOW);  
+   digitalWrite(Mux1, LOW);
+   Monitor_A.calcVI(20,2000);   
+
+   Irms_a = Monitor_A.Irms;
+   V_a    = Monitor_A.Vrms;   
+   fp_a   = Monitor_A.powerFactor;
+   leitura_a = Monitor_A.realPower;
+
    delay(100);
    
    //   Sensor de Potencia B
+   digitalWrite(Mux0, LOW);
    digitalWrite(Mux1, HIGH);  
-   digitalWrite(Mux2, LOW);
-   V_b = (analogRead(Sensores)*2909/10000)-(23727/10000);
-   
-   digitalWrite(Mux2, HIGH);
-   Irms_b = Monitor_Corrente.calcIrms(1480);
-  
-   leitura_b = (V_b*Irms_b/1000);
+   Monitor_B.calcVI(20,2000);   
+
+   Irms_b = Monitor_B.Irms;
+   V_b    = Monitor_B.Vrms;   
+   fp_b   = Monitor_B.powerFactor;
+   leitura_b = Monitor_B.realPower;
  
    delay(100);
    
    //   Sensor de Potencia C
    digitalWrite(Mux0, HIGH);
    digitalWrite(Mux1, LOW); 
-   digitalWrite(Mux2, LOW);
-   V_c = (analogRead(Sensores)*2909/10000)-(23727/10000);
-   
-   digitalWrite(Mux2, HIGH);
-   Irms_c = Monitor_Corrente.calcIrms(1480);
-  
-   leitura_c = (V_c*Irms_c/1000);
+   Monitor_C.calcVI(20,2000);   
+
+   Irms_c = Monitor_C.Irms;
+   V_c    = Monitor_C.Vrms;   
+   fp_c   = Monitor_C.powerFactor;
+   leitura_c = Monitor_C.realPower;
    
    delay(100);
 
@@ -257,19 +268,24 @@ void loop() {
   Serial.println(V_a);
   Serial.print("Corrente A: ");
   Serial.println(Irms_a);
+  Serial.print("Fator de Potência A: ");
+  Serial.println(fp_a);
   Serial.print("Potencia A: ");
   Serial.println(leitura_a);
   Serial.print("Tensão B: ");
   Serial.println(V_b);
+  Serial.print("Fator de Potência B: ");
+  Serial.println(fp_b);
   Serial.print("Corrente B: ");
   Serial.println(Irms_b);
   Serial.print("Potencia B: ");
   Serial.println(leitura_b);
-  Serial.println("Leitura OK");
   Serial.print("Tensão C: ");
   Serial.println(V_c);
   Serial.print("Corrente C: ");
   Serial.println(Irms_c);
+  Serial.print("Fator de Potência C: ");
+  Serial.println(fp_c);
   Serial.print("Potencia C: ");
   Serial.println(leitura_c);
   Serial.println("Leitura OK");
